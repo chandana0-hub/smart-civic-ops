@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#f8f9ff","surface-bright":"#f8f9ff","surface-tint":"#0053db","on-primary":"#ffffff","on-surface":"#0b1c30","secondary-fixed-dim":"#4cd7f6","on-error-container":"#93000a","on-primary-fixed":"#00174b","on-secondary-fixed-variant":"#004e5c","tertiary-container":"#656c89","surface-container-low":"#eff4ff","tertiary-fixed-dim":"#bec5e5","surface-container":"#e5eeff","secondary":"#00687a","secondary-fixed":"#acedff","tertiary-fixed":"#dbe1ff","on-tertiary-container":"#eeefff","primary-container":"#2563eb","surface-container-highest":"#d3e4fe","inverse-on-surface":"#eaf1ff","outline-variant":"#c3c6d7","tertiary":"#4c546f","surface-dim":"#cbdbf5","secondary-container":"#57dffe","on-secondary":"#ffffff","background":"#f8f9ff","on-secondary-fixed":"#001f26","surface-container-high":"#dce9ff","primary":"#004ac6","outline":"#737686","inverse-surface":"#213145","on-background":"#0b1c30","on-tertiary-fixed-variant":"#3e4660","on-tertiary-fixed":"#131a33","surface-variant":"#d3e4fe","primary-fixed-dim":"#b4c5ff","inverse-primary":"#b4c5ff","on-surface-variant":"#434655","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","on-secondary-container":"#006172","primary-fixed":"#dbe1ff","error":"#ba1a1a","on-primary-container":"#eeefff","on-primary-fixed-variant":"#003ea8","error-container":"#ffdad6","on-error":"#ffffff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-lg":"1.5rem","margin":"1rem","space-md":"1rem","space-xs":"0.25rem","margin-lg":"2rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1rem","space-xl":"2rem"},fontFamily:{"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"telemetry-code":["JetBrains Mono"],"display-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-md":["Inter"]},fontSize:{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"telemetry-code":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"display-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)] select-none"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-lg flex items-center gap-space-sm bg-inverse-surface"><img alt="CivicFlow AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Uey_YqHth-Yd2VybwCWfDEsKLBmEOjeXIkj9fKD--qY2unrds2X14-ijodW108kfgfnzVruFNYZmLWW5jrnXV2OIIItG6PSVq3DXin2WmEAp42RG9UwUYMMstnL0bnPAPQV78c3XMly_GMGmhuIIH12d7msFvbbHSu1-WGE9B5e-T9svtRy6p54dE7YD8s2suau_cKNgyfWBJEerI9PETgR6u1CtL9d-T5V1AUWjow"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary font-bold">CivicFlow AI</span></div><span class="font-telemetry-code text-[10px] uppercase tracking-wider text-secondary-fixed font-semibold">AI Operations Hub</span></div></div><div class="overflow-y-auto flex-1 px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Command Center</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="overview" href="#"><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="city-operations-map" href="#"><span class="font-label-md text-label-md">City Operations Map</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="incident-dispatch" href="#"><span class="font-label-md text-label-md">Incident Dispatch</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="notifications-center" href="#"><span class="font-label-md text-label-md">Notifications Center</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Intelligence</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="agentic-workflows" href="#"><span class="font-label-md text-label-md">Agentic Workflows</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="ai-agent-activity" href="#"><span class="font-label-md text-label-md">AI Agent Activity</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="automated-triage" href="#"><span class="font-label-md text-label-md">Automated Triage</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Municipal Fleet &amp; Units</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="departments" href="#"><span class="font-label-md text-label-md">Departments</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="field-crews" href="#"><span class="font-label-md text-label-md">Field Crews</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="iot-sensor-matrix" href="#"><span class="font-label-md text-label-md">IoT Sensor Matrix</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Analytics &amp; Reports</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="resolution-velocity" href="#"><span class="font-label-md text-label-md">Resolution Velocity</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="citizen-feedback" href="#"><span class="font-label-md text-label-md">Citizen Feedback</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="audit-logs" href="#"><span class="font-label-md text-label-md">Audit Logs</span></a></nav></div></div></div><div class="p-space-md m-space-md rounded-xl bg-inverse-surface/80 shadow-[0_1px_8px_rgba(0,0,0,0.2)]"><div class="flex items-start gap-space-sm"><span class="relative flex h-2.5 w-2.5 mt-1"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><div class="flex flex-col gap-0.5"><span class="font-telemetry-code text-[11px] font-semibold text-on-primary">Civic LLM Core v4.2</span><p class="font-body-sm text-[11px] leading-tight text-outline-variant">All Autonomous Agents Active (99.98% SLA)</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 flex items-center justify-between px-gutter-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container rounded-xl text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px] text-primary">location_city</span><span class="font-label-md text-label-md font-semibold">Metropolis Capital District (Zone A-F)</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></div><div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-high rounded-full"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-telemetry-code text-[11px] font-semibold text-primary">Routing: ACTIVE</span></div></div><div class="flex-1 max-w-xl mx-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-xl outline-none transition-all shadow-[0_1px_3px_rgba(11,19,43,0.04)] focus:shadow-[0_0_0_2px_rgba(37,99,235,0.2)]" placeholder="Search tickets, geofences, dispatch units, or citizen IDs (Ctrl + K)..." type="text"/><kbd class="absolute right-3 font-telemetry-code text-[10px] text-outline bg-surface-container px-1.5 py-0.5 rounded">Ctrl+K</kbd></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-sm py-1.5 bg-error-container text-on-error-container font-label-md text-label-md font-semibold rounded-xl hover:bg-error hover:text-on-error transition-all shadow-[0_1px_3px_rgba(11,19,43,0.04)]" type="button"><span class="material-symbols-outlined text-[16px]">campaign</span><span>Broadcast</span></button><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary">wb_sunny</span><span class="font-telemetry-code text-[12px]">72°F</span><span class="text-outline-variant">|</span><span class="font-telemetry-code text-[12px]">UTC-5 10:42 AM</span></div><a class="relative p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" data-path="notifications-center" href="#" title="Notifications Center"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-telemetry-code text-[9px] font-bold">14</span></a><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEukjLM-BIt-tavLbDoUmQpI25WLx0OPv23EfWnq5jF4W5-oswagEILE2t0HVm5dgMPETS7NkjXUhs178sJgHzQPhevSANnSlQXVA7mBKtyaO8TiOCOe4k0Fast4cQlTTT9JEWEvnecNDU_wuQ95_lsh9ynOd0KZogCitv-Y12pEr4pDrNnL2jM3ppRsbTz8_4Njs32wGX_0ps0y0Ci7Uc_pQDLG4w386TNL25Pys"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">Director Marcus Vance</span><span class="font-label-sm text-label-sm text-outline">Chief Municipal Operations Officer</span></div><span class="material-symbols-outlined text-[18px] text-outline cursor-pointer">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sticky Context Header Banner -->
+<div class="px-margin-lg py-space-md bg-surface border-b border-surface-container-high/60 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-telemetry-code text-body-sm text-outline">
+<span class="hover:text-primary cursor-pointer transition-colors">Civic Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">System Governance</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Settings &amp; Administration</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full font-telemetry-code text-label-sm text-on-surface-variant shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-secondary font-semibold">Config Sync: Active</span>
+<span class="text-outline-variant">|</span>
+<span>Version: v4.2.1</span>
+<span class="text-outline-variant">|</span>
+<span class="text-primary font-medium">Latency 8ms</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">System Administration &amp; Municipal Governance</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Global configuration, multi-agent threshold governors, role-based access control (RBAC), and enterprise telemetry integrations for Metropolis Civic Operating System.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-2 bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold rounded-lg shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">history</span>
+<span>Reset Defaults</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold rounded-lg shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export Config</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 bg-primary-container text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow-sm hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Save All Changes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Status Strip -->
+<div class="px-margin-lg py-space-md grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md bg-surface-container-low/40">
+<!-- Card 1 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">System Health</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold mt-1">99.98% SLA</span>
+</div>
+<div class="p-2 bg-secondary-fixed/30 rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-telemetry-code text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          18/18 Microservices
+        </span>
+<span>14ms Latency</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Active Operators &amp; RBAC</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold mt-1">142 Accounts</span>
+</div>
+<div class="p-2 bg-primary-fixed/40 rounded-lg text-primary">
+<span class="material-symbols-outlined text-[22px]">shield_person</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-telemetry-code text-body-sm text-on-surface-variant">
+<span>6 Directorates</span>
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-semibold text-primary">28 Active Sessions</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Autonomous Governance</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold mt-1">HITL @ 90%</span>
+</div>
+<div class="p-2 bg-tertiary-fixed/40 rounded-lg text-tertiary">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-telemetry-code text-body-sm text-on-surface-variant">
+<span class="text-secondary font-medium">Governor: Enforced</span>
+<span>6/6 Swarm Nodes</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Integration Gateways</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold mt-1">5 of 5 Live</span>
+</div>
+<div class="p-2 bg-secondary-fixed-dim/20 rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-telemetry-code text-body-sm text-on-surface-variant">
+<span class="truncate">SCADA, 911 CAD, Aura Core</span>
+<span class="text-secondary font-semibold">100% Sync</span>
+</div>
+</div>
+</div>
+<!-- Primary Tabbed Workbench Layout -->
+<div class="px-margin-lg py-space-lg flex flex-col lg:flex-row gap-space-lg">
+<!-- Vertical Administration Sidebar Tabs -->
+<div class="w-full lg:w-72 shrink-0 flex flex-col gap-space-xs">
+<div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm space-y-1">
+<button class="admin-tab-btn w-full flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-left transition-colors bg-primary-container text-on-primary font-semibold shadow-sm" id="tab-btn-general" onclick="switchAdminTab('general')" type="button">
+<span class="material-symbols-outlined text-[20px]">apartment</span>
+<div class="flex flex-col flex-1 leading-tight">
+<span class="font-label-md text-label-md">General &amp; Municipal</span>
+<span class="font-label-sm text-[10px] opacity-80">Identity, locale, branding</span>
+</div>
+</button>
+<button class="admin-tab-btn w-full flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-left transition-colors text-on-surface-variant hover:bg-surface-container font-medium" id="tab-btn-rbac" onclick="switchAdminTab('rbac')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">badge</span>
+<div class="flex flex-col flex-1 leading-tight">
+<span class="font-label-md text-label-md text-on-surface">RBAC &amp; Access Control</span>
+<span class="font-label-sm text-[10px] text-outline">142 users, roles, 2FA</span>
+</div>
+</button>
+<button class="admin-tab-btn w-full flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-left transition-colors text-on-surface-variant hover:bg-surface-container font-medium" id="tab-btn-swarm" onclick="switchAdminTab('swarm')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">psychology</span>
+<div class="flex flex-col flex-1 leading-tight">
+<span class="font-label-md text-label-md text-on-surface">AI Agent Swarm</span>
+<span class="font-label-sm text-[10px] text-outline">6 Autonomous governors</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<button class="admin-tab-btn w-full flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-left transition-colors text-on-surface-variant hover:bg-surface-container font-medium" id="tab-btn-departments" onclick="switchAdminTab('departments')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">domain</span>
+<div class="flex flex-col flex-1 leading-tight">
+<span class="font-label-md text-label-md text-on-surface">Department SLAs</span>
+<span class="font-label-sm text-[10px] text-outline">Escalation thresholds</span>
+</div>
+</button>
+<button class="admin-tab-btn w-full flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-left transition-colors text-on-surface-variant hover:bg-surface-container font-medium" id="tab-btn-integrations" onclick="switchAdminTab('integrations')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">electrical_services</span>
+<div class="flex flex-col flex-1 leading-tight">
+<span class="font-label-md text-label-md text-on-surface">External Gateways</span>
+<span class="font-label-sm text-[10px] text-outline">SCADA, GIS, 911 CAD</span>
+</div>
+</button>
+<button class="admin-tab-btn w-full flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-left transition-colors text-on-surface-variant hover:bg-surface-container font-medium" id="tab-btn-security" onclick="switchAdminTab('security')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">lock</span>
+<div class="flex flex-col flex-1 leading-tight">
+<span class="font-label-md text-label-md text-on-surface">Security &amp; Audit Logs</span>
+<span class="font-label-sm text-[10px] text-outline">FIDO2, SIEM telemetry</span>
+</div>
+</button>
+</div>
+<!-- Quick Server Info Box -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col gap-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Instance Diagnostics</span>
+<div class="flex items-center justify-between font-telemetry-code text-body-sm">
+<span>Node ID:</span>
+<span class="text-on-surface font-semibold">METRO-EAST-01</span>
+</div>
+<div class="flex items-center justify-between font-telemetry-code text-body-sm">
+<span>Build Hash:</span>
+<span class="text-on-surface font-semibold">#a471b80</span>
+</div>
+<div class="flex items-center justify-between font-telemetry-code text-body-sm">
+<span>Gov-Cloud Region:</span>
+<span class="text-on-surface font-semibold">us-gov-east-1</span>
+</div>
+<div class="mt-2 pt-2 flex items-center justify-between font-telemetry-code text-body-sm">
+<span>Uptime:</span>
+<span class="text-secondary font-semibold">99d 14h 22m</span>
+</div>
+</div>
+</div>
+<!-- Main Content Panels -->
+<div class="flex-1 flex flex-col min-w-0">
+<!-- ================= 1. GENERAL SETTINGS PANEL ================= -->
+<div class="admin-panel flex flex-col gap-space-lg" id="panel-general">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Municipal Identity &amp; Region</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configure top-level authority profile, naming designations, and localized system standards.</p>
+</div>
+<span class="px-2.5 py-1 bg-secondary-fixed/40 text-secondary rounded-full font-telemetry-code text-label-sm font-semibold">LIVE PROFILE</span>
+</div>
+<!-- Municipal Seal & Crest Section -->
+<div class="flex flex-col md:flex-row items-center gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shadow-sm shrink-0 bg-inverse-surface flex items-center justify-center">
+<img class="object-cover w-full h-full" data-alt="High-resolution circular municipal crest seal for Metropolis City Government featuring modern architectural skyline, scales of justice, civic stars, deep navy blue and gold accents, ultra crisp Vector rendering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWDZvlzHkpbWtZH6-Ype6Rk3TvU4FbJf-hk8h9EQRuxR9d8AB5WwHVpzEw-DyJXlH-JnFv_0Z8ZgGOn8zU8c_B_PJaZUs7jfV7zNcuhEYcoUHIsqKcYp3ivpaPanwLG6b_VikCsa5lWdttgT0X-oX99uAS7yBrpe1SXSHYCHOQCDGoeayeDriyqZhU6L4p6Yd5lopWObCm5UclPHmHDRiWHoALRN7NEEqEqpjKg_k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end justify-center pb-1">
+<span class="text-on-primary font-telemetry-code text-[9px] uppercase tracking-wider">Zone A-F</span>
+</div>
+</div>
+<div class="flex-1 space-y-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Official Directorate Crest &amp; Watermark</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Embossed on all automated public push notifications, municipal dispatch reports, and citizen resolution certificates (SVG or High-Res PNG max 4MB).</p>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold rounded shadow-sm hover:bg-surface-container transition-colors" type="button">Replace Emblem</button>
+<button class="px-space-sm py-1 text-error font-label-sm text-label-sm font-semibold hover:bg-error-container/40 rounded transition-colors" type="button">Remove</button>
+</div>
+</div>
+</div>
+<!-- Form Fields Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-outline">Application Designation</label>
+<input class="w-full px-space-sm py-2 bg-surface-container-low text-on-surface font-body-md text-body-md rounded shadow-sm focus:outline-none focus:bg-surface-container-lowest transition-all" type="text" value="CivicFlow AI - Metropolis Smart City Operations"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-outline">Jurisdiction &amp; Zone Mapping</label>
+<input class="w-full px-space-sm py-2 bg-surface-container-low text-on-surface font-body-md text-body-md rounded shadow-sm focus:outline-none focus:bg-surface-container-lowest transition-all" type="text" value="Metropolis Capital District (Zone A-F)"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-outline">Standard Municipal Timezone</label>
+<div class="relative">
+<select class="w-full px-space-sm py-2 bg-surface-container-low text-on-surface font-body-md text-body-md rounded shadow-sm appearance-none focus:outline-none focus:bg-surface-container-lowest">
+<option selected="">UTC-5:00 Eastern Time (US &amp; Canada)</option>
+<option>UTC-6:00 Central Time</option>
+<option>UTC-7:00 Mountain Time</option>
+<option>UTC-8:00 Pacific Time</option>
+<option>UTC+0:00 Greenwich Mean Time</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-outline pointer-events-none">unfold_more</span>
+</div>
+<span class="font-telemetry-code text-[11px] text-secondary">Live Node Timestamp: 2025-05-18 10:42:15 EDT</span>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-outline">Primary Operational NLP Model Language</label>
+<div class="relative">
+<select class="w-full px-space-sm py-2 bg-surface-container-low text-on-surface font-body-md text-body-md rounded shadow-sm appearance-none focus:outline-none focus:bg-surface-container-lowest">
+<option selected="">English (US) - Multi-dialect NLP enabled</option>
+<option>Spanish (Metropolitan Bilingual Core)</option>
+<option>French (Canadian Municipal Pack)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-outline pointer-events-none">unfold_more</span>
+</div>
+<span class="font-telemetry-code text-[11px] text-outline">Polyglot automatic citizen translation enabled</span>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-outline">Telemetry Display Format</label>
+<input class="w-full px-space-sm py-2 bg-surface-container-low text-on-surface font-body-md text-body-md rounded shadow-sm focus:outline-none focus:bg-surface-container-lowest transition-all" type="text" value="YYYY-MM-DD HH:mm:ss (24h) | Metric (km/m/Celsius)"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-outline">Central Dispatch Radio Frequency (CAD Sync)</label>
+<input class="w-full px-space-sm py-2 bg-surface-container-low text-on-surface font-body-md text-body-md rounded shadow-sm focus:outline-none focus:bg-surface-container-lowest transition-all" type="text" value="460.125 MHz (Channel TAC-1 Municipal)"/>
+</div>
+</div>
+</div>
+<!-- Municipal Emergency Broadcast Mode Guardrail -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[22px]">warning</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Autonomous Civil Defense Override Switch</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">
+              When toggled, civic agents yield immediate priority to State Emergency Operations Center (EOC). All routine street cleaning and non-emergency works are queued.
+            </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-telemetry-code text-body-sm text-outline font-semibold">CIVIC STANDBY</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-error"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- ================= 2. RBAC & USER MANAGEMENT PANEL ================= -->
+<div class="admin-panel hidden flex-col gap-space-lg" id="panel-rbac">
+<!-- Role distribution summary -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline font-semibold">Super Admins</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">4</span>
+<span class="font-telemetry-code text-body-sm text-primary">Unrestricted</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline font-semibold">Dept Heads</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">12</span>
+<span class="font-telemetry-code text-body-sm text-secondary">Directorate Level</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline font-semibold">Municipal Officers</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">48</span>
+<span class="font-telemetry-code text-body-sm text-on-surface-variant">Triage &amp; Resolve</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline font-semibold">Field Crew Leads</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">78</span>
+<span class="font-telemetry-code text-body-sm text-secondary">Mobile MDT Terminals</span>
+</div>
+</div>
+</div>
+<!-- User Registry Card & Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Operator Directory &amp; Entitlements</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Granular authorization with hardware token verification and role inheritance.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1 px-space-sm py-1.5 bg-surface-container text-on-surface font-label-md text-label-md font-semibold rounded shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>RBAC Policy Matrix</span>
+</button>
+<button class="flex items-center gap-1 px-space-md py-1.5 bg-primary-container text-on-primary font-label-md text-label-md font-semibold rounded shadow-sm hover:bg-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+<span>Add New Operator</span>
+</button>
+</div>
+</div>
+<!-- Filter / Search row -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded shadow-sm focus:outline-none focus:bg-surface-container-lowest" placeholder="Filter by officer name, badge number, department or email..." type="text"/>
+</div>
+<select class="px-3 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded shadow-sm focus:outline-none">
+<option>All Roles</option>
+<option>Super Admin</option>
+<option>Dept Lead</option>
+<option>Field Officer</option>
+</select>
+</div>
+<!-- User Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md rounded-l-lg">Officer / Identity</th>
+<th class="py-3 px-space-md">Role Authorization</th>
+<th class="py-3 px-space-md">Assigned Directorate</th>
+<th class="py-3 px-space-md">2FA / FIDO2</th>
+<th class="py-3 px-space-md">Telemetry Session</th>
+<th class="py-3 px-space-md text-right rounded-r-lg">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40">
+<!-- User 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Professional municipal director headshot portrait of Marcus Vance, confident seasoned public administrator in modern navy suit against civic boardroom background with soft cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANTUiRuTNyXMoCpGKb6rq-Sdi8dOLEcBFR30I4SMvcfWpHOsRFgyVzPaWUN8lyWBH2j0rbiQldzYNQGdoDwOl6ZDWHWtem8or3nvJSokNPHQ4H-T475P6-rBd_d63jVntdwZteQ9a1FlhaPFyZtgVbKpCp79R4uNirrmjfP-2DI-4zYt6IhkP1sdX1vHP5YQtO9PsblDynlYJ9kxZJDw2WsmG0NAoq5OrabUS97Ds"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Director Marcus Vance</span>
+<span class="font-telemetry-code text-[11px] text-outline">m.vance@metropolis.gov</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 bg-primary-fixed text-primary font-telemetry-code text-label-sm font-semibold rounded-full">SUPER ADMIN</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-medium">Executive Operations</td>
+<td class="py-3 px-space-md">
+<span class="flex items-center gap-1 text-secondary font-telemetry-code text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+                      YubiKey Hardware
+                    </span>
+</td>
+<td class="py-3 px-space-md font-telemetry-code text-body-sm text-on-surface">Active (12m ago)</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-outline">
+<button class="p-1 hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">key</span></button>
+<button class="p-1 hover:text-error rounded" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button>
+</div>
+</td>
+</tr>
+<!-- User 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of Commissioner Elena Vance, civil infrastructure director woman wearing architectural safety jacket in municipal command center, high tech digital backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB96ZSM4vbioMfGZyVEz_ckvZU7XEMAP79BbqoQYe0HAZQPg69Er_H7q-_ymQkMQAQMMuBxx_5-pU1JCIlLWTE6HEQPVNGvV56Udg6vYNv6WW5cf7_2nYz-9cC5pk9fqZiw8nrRERsbJbf-w7yWTjHrx5951bnz2_3oasQ5Ms9EQouzccyZXxqyA7v2LWVDl5LMPRijWZwID5Us_dF_KEzMBxOSH2tOvTs3Y-r2YB0"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Comm. Elena Vance</span>
+<span class="font-telemetry-code text-[11px] text-outline">e.vance@metropolis.gov</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 bg-secondary-fixed text-secondary font-telemetry-code text-label-sm font-semibold rounded-full">DEPT ADMIN</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-medium">Roads &amp; Civil Infra</td>
+<td class="py-3 px-space-md">
+<span class="flex items-center gap-1 text-secondary font-telemetry-code text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+                      TOTP Authenticator
+                    </span>
+</td>
+<td class="py-3 px-space-md font-telemetry-code text-body-sm text-on-surface">Active (2h ago)</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-outline">
+<button class="p-1 hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">key</span></button>
+<button class="p-1 hover:text-error rounded" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button>
+</div>
+</td>
+</tr>
+<!-- User 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of Dr. Samuel Chen, Asian electrical engineer in clean white labcoat with glasses, smart grid control center with glowing digital energy matrix behind him" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFxscd2CQUwAXfOfGm7s7XPyVj3gducUfaGBu0ybXM15AUlp2cmXqZSoha9hUOI1o5wX8uuqyfELYidBb_jDIgxPR6rPPz6ljHrcT5zgJhwfaAsBO2ExvXrVQfuLsAGd6t5W_Pwf95rHhheyF7NjyEinTbMQ-skb0J90RTOPuHpEArYqONocY7BimE39eNNVOfafZwhfD_8AyrLpieeGcnEcw8v96KuC59fRtj0gA"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Dr. Samuel Chen</span>
+<span class="font-telemetry-code text-[11px] text-outline">s.chen@metropolis.gov</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 bg-secondary-fixed text-secondary font-telemetry-code text-label-sm font-semibold rounded-full">DEPT ADMIN</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-medium">Electricity &amp; Smart Grid</td>
+<td class="py-3 px-space-md">
+<span class="flex items-center gap-1 text-secondary font-telemetry-code text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+                      FIDO2 Token
+                    </span>
+</td>
+<td class="py-3 px-space-md font-telemetry-code text-body-sm text-on-surface">Active (34m ago)</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-outline">
+<button class="p-1 hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">key</span></button>
+<button class="p-1 hover:text-error rounded" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button>
+</div>
+</td>
+</tr>
+<!-- User 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of Lt. Carlos Mendez, tactical municipal field response crew lead with safety comm headset and rugged field utility vest standing near emergency response vehicle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFKym0pvu0qVd2RNKpY493FyL0w1ZnDUuCPRkycuESOpPNp-Gtr_dpMkxxi1GTCcOdYC2ykOM14bSoNR8jDKTfpBDRqm7trKyrbfHI5U6Rg4JopGiHs1mR97WM9CoFyVZutaFC_I3prhm9ZnLuf6O45jeT8e1GGgiCTpEtsODbWq1aEY77v_CbKS71NRCgzpUG2ZdoXBJ8jqgf3Utytet_x6INr-eZX_ob7vTR-Ag"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Lt. Carlos Mendez</span>
+<span class="font-telemetry-code text-[11px] text-outline">c.mendez@metropolis.gov</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 bg-tertiary-fixed text-tertiary font-telemetry-code text-label-sm font-semibold rounded-full">CREW LEAD</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-medium">Rapid Field Response #04</td>
+<td class="py-3 px-space-md">
+<span class="flex items-center gap-1 text-secondary font-telemetry-code text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+                      Push Authenticator
+                    </span>
+</td>
+<td class="py-3 px-space-md font-telemetry-code text-body-sm text-secondary font-semibold">ON-DUTY (MDT-11)</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-outline">
+<button class="p-1 hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">key</span></button>
+<button class="p-1 hover:text-error rounded" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- ================= 3. AI AGENT CONFIGURATION & SWARM GOVERNORS ================= -->
+<div class="admin-panel hidden flex-col gap-space-lg" id="panel-swarm">
+<!-- Swarm Master Governance Pill Strip -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md border-l-4 border-secondary">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Autonomous Swarm Safeguard Matrix</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">
+              All 6 agents execute decisions under the Civic Constitution v4.2. Any output with an inference confidence score below governor threshold automatically requests a Human-In-The-Loop (HITL) dispatch review.
+            </p>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="flex flex-col items-end">
+<span class="font-telemetry-code text-label-sm text-outline uppercase font-semibold">Global HITL Threshold</span>
+<span class="font-telemetry-code text-headline-sm text-primary font-bold">90.0% Confidence</span>
+</div>
+<button class="px-space-md py-2 bg-error text-on-error font-label-md text-label-md font-semibold rounded shadow-sm hover:opacity-95 transition-opacity flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">pan_tool</span>
+<span>Emergency Swarm Halt</span>
+</button>
+</div>
+</div>
+<!-- 6 Agents Configuration Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-md">
+<!-- Agent 1 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 bg-primary-fixed/40 rounded-lg text-primary">
+<span class="material-symbols-outlined text-[20px]">document_scanner</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Complaint Classification Agent</h3>
+<span class="font-telemetry-code text-[11px] text-outline">Multimodal Vision + NLP v4.2</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Parses raw citizen photos, videos, and multi-dialect voice audio reports. Classifies into 142 distinct civic taxonomy categories.
+              </p>
+</div>
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-lg font-telemetry-code text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-outline">Autonomous Confidence Cutoff:</span>
+<span class="text-primary font-bold">92%</span>
+</div>
+<input class="w-full h-1 bg-surface-container rounded appearance-none cursor-pointer accent-primary" max="99" min="70" type="range" value="92"/>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline">HITL Review Trigger:</span>
+<span class="text-on-surface font-semibold">&lt; 88% Confidence</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Ingestion Throttle:</span>
+<span class="text-on-surface">500 tickets/min</span>
+</div>
+</div>
+</div>
+<!-- Agent 2 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 bg-error-container/60 rounded-lg text-error">
+<span class="material-symbols-outlined text-[20px]">e911_emergency</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Priority Assessment Agent</h3>
+<span class="font-telemetry-code text-[11px] text-outline">Threat Matrix &amp; Acoustic Analysis</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Evaluates life-safety risks, electrical arching hazards, chemical spills, and bridge fractures using thermal and visual heuristics.
+              </p>
+</div>
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-lg font-telemetry-code text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-outline">Confidence Cutoff:</span>
+<span class="text-primary font-bold">94%</span>
+</div>
+<input class="w-full h-1 bg-surface-container rounded appearance-none cursor-pointer accent-primary" max="99" min="70" type="range" value="94"/>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline">Auto-Escalate Priority 1:</span>
+<span class="text-secondary font-bold">Immediate CAD Alert</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">False Alarm Dampener:</span>
+<span class="text-on-surface">Cross-sensor verification</span>
+</div>
+</div>
+</div>
+<!-- Agent 3 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 bg-secondary-fixed/40 rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[20px]">fork_right</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Department Assignment Agent</h3>
+<span class="font-telemetry-code text-[11px] text-outline">Ontology &amp; Resource Routing</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Resolves inter-agency jurisdiction conflicts (e.g. water pipe burst under railway tracks) and balances load across municipal divisions.
+              </p>
+</div>
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-lg font-telemetry-code text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-outline">Routing Confidence:</span>
+<span class="text-primary font-bold">90%</span>
+</div>
+<input class="w-full h-1 bg-surface-container rounded appearance-none cursor-pointer accent-primary" max="99" min="70" type="range" value="90"/>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline">Spillover Auto-balance:</span>
+<span class="text-secondary font-semibold">Active (Max 15% delta)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Charter Conflict Resolution:</span>
+<span class="text-on-surface">Code Title 42 Priority</span>
+</div>
+</div>
+</div>
+<!-- Agent 4 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 bg-tertiary-fixed/40 rounded-lg text-tertiary">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Field Dispatch Agent</h3>
+<span class="font-telemetry-code text-[11px] text-outline">Geofenced VRP Optimizer</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Calculates fastest travel paths for emergency crews, factoring real-time traffic signal telemetry and heavy equipment capacity.
+              </p>
+</div>
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-lg font-telemetry-code text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-outline">Dispatch Confidence:</span>
+<span class="text-primary font-bold">88%</span>
+</div>
+<input class="w-full h-1 bg-surface-container rounded appearance-none cursor-pointer accent-primary" max="99" min="70" type="range" value="88"/>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline">Geofence Safety Buffer:</span>
+<span class="text-on-surface font-semibold">200m Radius</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Hospital Zone Quiet Detour:</span>
+<span class="text-secondary font-semibold">Enforced (Active)</span>
+</div>
+</div>
+</div>
+<!-- Agent 5 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 bg-secondary-fixed-dim/30 rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Resolution Verification Agent</h3>
+<span class="font-telemetry-code text-[11px] text-outline">CV Drone &amp; Officer Telemetry Diff</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Compares before/after imagery of repaired potholes, water mains, and debris removal against engineering standards prior to closing.
+              </p>
+</div>
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-lg font-telemetry-code text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-outline">Verification Strictness:</span>
+<span class="text-primary font-bold">High (Dual Photo + GPS)</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline">Computer Vision Diff Match:</span>
+<span class="text-on-surface font-semibold">Min 94% Surface Cleared</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Re-open on Citizen Dispute:</span>
+<span class="text-secondary font-semibold">Auto-Trigger Within 48h</span>
+</div>
+</div>
+</div>
+<!-- Agent 6 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 bg-primary-fixed/40 rounded-lg text-primary">
+<span class="material-symbols-outlined text-[20px]">campaign</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Citizen Notification Agent</h3>
+<span class="font-telemetry-code text-[11px] text-outline">Omnichannel SMS, Voice &amp; Push</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Generates empathetic, context-aware ticket status updates and road detour alerts in citizen's detected language.
+              </p>
+</div>
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-lg font-telemetry-code text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-outline">Delivery Throttle:</span>
+<span class="text-primary font-bold">120 messages/sec</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline">Citizen Opt-out Compliance:</span>
+<span class="text-secondary font-semibold">Strict FCC / CRTC Rules</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Sentiment Guardrail:</span>
+<span class="text-on-surface">Civic Tone Checker v3</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= 4. DEPARTMENT CONFIGURATION & MUNICIPAL SLAS ================= -->
+<div class="admin-panel hidden flex-col gap-space-lg" id="panel-departments">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Directorate SLAs &amp; Response Thresholds</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mandated maximum resolution times and automated escalation paths to Deputy Mayors.</p>
+</div>
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface font-label-md text-label-md font-semibold rounded shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+              Export Charter SLA Report
+            </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Dept 1 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Water Supply &amp; Drainage</span>
+<span class="font-telemetry-code text-[11px] text-outline">Lead: Chief Eng. K. Alvarez</span>
+</div>
+<span class="p-1.5 bg-secondary-fixed/40 text-secondary rounded-lg">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</span>
+</div>
+<div class="space-y-1 font-telemetry-code text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Target SLA:</span>
+<span class="font-bold text-on-surface">2.5 Hours</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Escalate to Director:</span>
+<span class="font-bold text-error">After 15 min idle</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Current Compliance:</span>
+<span class="font-bold text-secondary">98.2%</span>
+</div>
+</div>
+<button class="w-full mt-1 py-1.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold rounded hover:bg-surface-container transition-colors" type="button">Edit Thresholds</button>
+</div>
+<!-- Dept 2 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Roads &amp; Infrastructure</span>
+<span class="font-telemetry-code text-[11px] text-outline">Lead: Comm. E. Vance</span>
+</div>
+<span class="p-1.5 bg-primary-fixed/40 text-primary rounded-lg">
+<span class="material-symbols-outlined text-[18px]">add_road</span>
+</span>
+</div>
+<div class="space-y-1 font-telemetry-code text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Target SLA:</span>
+<span class="font-bold text-on-surface">4.0 Hours</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Escalate to Director:</span>
+<span class="font-bold text-error">After 30 min idle</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Current Compliance:</span>
+<span class="font-bold text-secondary">96.7%</span>
+</div>
+</div>
+<button class="w-full mt-1 py-1.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold rounded hover:bg-surface-container transition-colors" type="button">Edit Thresholds</button>
+</div>
+<!-- Dept 3 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Electricity &amp; Smart Grid</span>
+<span class="font-telemetry-code text-[11px] text-outline">Lead: Dr. S. Chen</span>
+</div>
+<span class="p-1.5 bg-secondary-fixed/40 text-secondary rounded-lg">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</span>
+</div>
+<div class="space-y-1 font-telemetry-code text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Target SLA:</span>
+<span class="font-bold text-on-surface">1.5 Hours</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Escalate to Director:</span>
+<span class="font-bold text-error">After 10 min idle</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Current Compliance:</span>
+<span class="font-bold text-secondary">99.4%</span>
+</div>
+</div>
+<button class="w-full mt-1 py-1.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold rounded hover:bg-surface-container transition-colors" type="button">Edit Thresholds</button>
+</div>
+<!-- Dept 4 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Waste Management</span>
+<span class="font-telemetry-code text-[11px] text-outline">Lead: Ops Chief T. Novak</span>
+</div>
+<span class="p-1.5 bg-tertiary-fixed/40 text-tertiary rounded-lg">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+</span>
+</div>
+<div class="space-y-1 font-telemetry-code text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Target SLA:</span>
+<span class="font-bold text-on-surface">3.0 Hours</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Escalate to Director:</span>
+<span class="font-bold text-error">After 45 min idle</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Current Compliance:</span>
+<span class="font-bold text-secondary">94.1%</span>
+</div>
+</div>
+<button class="w-full mt-1 py-1.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold rounded hover:bg-surface-container transition-colors" type="button">Edit Thresholds</button>
+</div>
+<!-- Dept 5 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Public Health &amp; Biohazard</span>
+<span class="font-telemetry-code text-[11px] text-outline">Lead: Dr. R. Patel</span>
+</div>
+<span class="p-1.5 bg-error-container/60 text-error rounded-lg">
+<span class="material-symbols-outlined text-[18px]">sanitizer</span>
+</span>
+</div>
+<div class="space-y-1 font-telemetry-code text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Target SLA:</span>
+<span class="font-bold text-on-surface">1.0 Hour</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Escalate to Director:</span>
+<span class="font-bold text-error">After 05 min idle</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Current Compliance:</span>
+<span class="font-bold text-secondary">100%</span>
+</div>
+</div>
+<button class="w-full mt-1 py-1.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold rounded hover:bg-surface-container transition-colors" type="button">Edit Thresholds</button>
+</div>
+<!-- Dept 6 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Traffic &amp; Signal Networks</span>
+<span class="font-telemetry-code text-[11px] text-outline">Lead: Comm. J. Mercer</span>
+</div>
+<span class="p-1.5 bg-primary-fixed/40 text-primary rounded-lg">
+<span class="material-symbols-outlined text-[18px]">traffic</span>
+</span>
+</div>
+<div class="space-y-1 font-telemetry-code text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Target SLA:</span>
+<span class="font-bold text-on-surface">1.0 Hour</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Escalate to Director:</span>
+<span class="font-bold text-error">After 10 min idle</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Current Compliance:</span>
+<span class="font-bold text-secondary">99.1%</span>
+</div>
+</div>
+<button class="w-full mt-1 py-1.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold rounded hover:bg-surface-container transition-colors" type="button">Edit Thresholds</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= 5. EXTERNAL GATEWAYS & INTEGRATIONS ================= -->
+<div class="admin-panel hidden flex-col gap-space-lg" id="panel-integrations">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">External Gateways &amp; Enterprise Pipes</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Synchronized telemetric connections to municipal IoT mesh, dispatch CAD, and regional compute clusters.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface font-label-md text-label-md font-semibold rounded shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+                Ping All Nodes
+              </button>
+<button class="px-space-md py-1.5 bg-primary-container text-on-primary font-label-md text-label-md font-semibold rounded shadow-sm hover:bg-primary transition-colors" type="button">
+                Add New Gateway
+              </button>
+</div>
+</div>
+<div class="space-y-space-sm">
+<!-- Gateway 1 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 bg-secondary-fixed/40 text-secondary rounded-lg">
+<span class="material-symbols-outlined text-[24px]">sensors</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Metropolis SCADA &amp; IoT Telemetry Network</span>
+<span class="px-2 py-0.5 bg-secondary-fixed text-secondary font-telemetry-code text-[10px] font-bold rounded-full">CONNECTED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">MQTT over TLS 1.3 • 482 active sensor nodes streaming water pressure, voltage spikes, and bridge strain.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-auto font-telemetry-code text-body-sm">
+<span class="text-secondary font-semibold">14ms latency</span>
+<span class="text-outline">Port 8883</span>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface rounded shadow-sm hover:bg-surface-container font-semibold" type="button">Configure</button>
+</div>
+</div>
+<!-- Gateway 2 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 bg-primary-fixed/40 text-primary rounded-lg">
+<span class="material-symbols-outlined text-[24px]">map</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">GIS &amp; Spatial Matrix (Esri ArcGIS / PostGIS 3.4)</span>
+<span class="px-2 py-0.5 bg-secondary-fixed text-secondary font-telemetry-code text-[10px] font-bold rounded-full">CONNECTED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Vector tile geocoding pipeline with spatial index mirroring every 5 seconds for road-closure polygons.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-auto font-telemetry-code text-body-sm">
+<span class="text-secondary font-semibold">8ms latency</span>
+<span class="text-outline">Sync: 5s</span>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface rounded shadow-sm hover:bg-surface-container font-semibold" type="button">Configure</button>
+</div>
+</div>
+<!-- Gateway 3 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 bg-error-container/60 text-error rounded-lg">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Emergency 911 CAD &amp; Public Safety Link</span>
+<span class="px-2 py-0.5 bg-secondary-fixed text-secondary font-telemetry-code text-[10px] font-bold rounded-full">CONNECTED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Direct bidirectional APCO P25 / TETRA radio bridge with automatic priority escalation to EMS dispatch.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-auto font-telemetry-code text-body-sm">
+<span class="text-secondary font-semibold">4ms latency</span>
+<span class="text-outline">Tier-0 Bridge</span>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface rounded shadow-sm hover:bg-surface-container font-semibold" type="button">Configure</button>
+</div>
+</div>
+<!-- Gateway 4 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 bg-tertiary-fixed/40 text-tertiary rounded-lg">
+<span class="material-symbols-outlined text-[24px]">sms</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Metropolitan SMS &amp; Omnichannel Gateway</span>
+<span class="px-2 py-0.5 bg-secondary-fixed text-secondary font-telemetry-code text-[10px] font-bold rounded-full">CONNECTED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Twilio Gov Cloud dedicated shortcodes (311-METRO) with 99.99% throughput across Zone A through F.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-auto font-telemetry-code text-body-sm">
+<span class="text-secondary font-semibold">22ms latency</span>
+<span class="text-outline">Rate: 120/s</span>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface rounded shadow-sm hover:bg-surface-container font-semibold" type="button">Configure</button>
+</div>
+</div>
+<!-- Gateway 5 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 bg-secondary-fixed-dim/30 text-secondary rounded-lg">
+<span class="material-symbols-outlined text-[24px]">memory</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Aura-LLM Core v4.2 Cognitive Engine Cluster</span>
+<span class="px-2 py-0.5 bg-secondary-fixed text-secondary font-telemetry-code text-[10px] font-bold rounded-full">CONNECTED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Metropolis-East-GPU-Node-04 • 8x H100 SXM5 inference fabric providing autonomous reasoning.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-auto font-telemetry-code text-body-sm">
+<span class="text-secondary font-semibold">11ms latency</span>
+<span class="text-outline">Tokens: 3.4k/s</span>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface rounded shadow-sm hover:bg-surface-container font-semibold" type="button">Configure</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= 6. SECURITY, COMPLIANCE & AUDIT LOGS ================= -->
+<div class="admin-panel hidden flex-col gap-space-lg" id="panel-security">
+<!-- Security Policies Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Security Posture &amp; Zero-Trust Enforcements</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Federated identity standards, cryptographically verified session timeouts, and IP boundaries.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md bg-surface-container-low rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Mandatory FIDO2 / 2FA</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Requires hardware key or WebAuthn for all Officers and Department Administrators.</p>
+<div class="pt-1">
+<span class="px-2 py-0.5 bg-secondary-fixed text-secondary font-telemetry-code text-[10px] font-bold rounded">ENFORCED (100%)</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Session Idle Timeout</span>
+<span class="material-symbols-outlined text-outline text-[20px]">timer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Terminates active administrative browser token after 15 minutes of user inactivity.</p>
+<div class="pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface font-telemetry-code text-[10px] font-bold rounded">15 MINUTES</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">City Gov VPN Restriction</span>
+<span class="material-symbols-outlined text-primary text-[20px]">vpn_lock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Restricts backend dispatch controls to allowlisted Metropolis Intranet subnets.</p>
+<div class="pt-1">
+<span class="px-2 py-0.5 bg-primary-fixed text-primary font-telemetry-code text-[10px] font-bold rounded">10.240.0.0/16 ONLY</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Telemetry Audit Trail -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Immutable Security &amp; Audit Trail</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cryptographically signed transaction log synced to Municipal SIEM.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface font-label-md text-label-md font-semibold rounded shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+                Export Syslog (.SIEM)
+              </button>
+</div>
+</div>
+<div class="divide-y divide-surface-container-high/50 font-telemetry-code text-body-sm">
+<!-- Log 1 -->
+<div class="py-3 flex flex-col md:flex-row md:items-center justify-between gap-2 hover:bg-surface-container-low/40 px-2 rounded transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="text-on-surface font-medium">User Marcus Vance modified Swarm Governor HITL threshold (88% -&gt; 90%)</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>IP: 10.240.12.4</span>
+<span class="text-secondary font-semibold">SUCCESS</span>
+<span>12m ago</span>
+</div>
+</div>
+<!-- Log 2 -->
+<div class="py-3 flex flex-col md:flex-row md:items-center justify-between gap-2 hover:bg-surface-container-low/40 px-2 rounded transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+<span class="text-on-surface font-medium">Automated Backup: PostGIS Spatial Database snapshot created (14.2 GB)</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>System Daemon</span>
+<span class="text-secondary font-semibold">BACKUP_OK</span>
+<span>1h ago</span>
+</div>
+</div>
+<!-- Log 3 -->
+<div class="py-3 flex flex-col md:flex-row md:items-center justify-between gap-2 hover:bg-surface-container-low/40 px-2 rounded transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-error shrink-0"></span>
+<span class="text-error font-medium">Failed login attempt from unauthorized subnet blocked by Cloud Firewall</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span class="text-error">IP: 198.51.100.22</span>
+<span class="text-error font-bold">REJECTED</span>
+<span>3h ago</span>
+</div>
+</div>
+<!-- Log 4 -->
+<div class="py-3 flex flex-col md:flex-row md:items-center justify-between gap-2 hover:bg-surface-container-low/40 px-2 rounded transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="text-on-surface font-medium">API Token rotated for Metropolitan SMS Gateway</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>Officer Chen</span>
+<span class="text-secondary font-semibold">TOKEN_ROTATED</span>
+<span>6h ago</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating / Sticky Operational Deploy Drawer -->
+<div class="sticky bottom-0 z-30 px-margin-lg py-3 bg-surface/95 backdrop-blur-md border-t border-surface-container-high/80 shadow-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm font-telemetry-code text-body-sm text-on-surface-variant">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<span>System state synchronized with City Data Center (Cloud-Gov US-East)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold rounded shadow-sm hover:bg-surface-container transition-colors" type="button">
+        Discard Unsaved
+      </button>
+<button class="flex items-center gap-1.5 px-space-lg py-2 bg-primary-container text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+<span>Save &amp; Deploy Configuration</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  function switchAdminTab(targetTab) {
+    const tabs = ['general', 'rbac', 'swarm', 'departments', 'integrations', 'security'];
+    
+    tabs.forEach(tab => {
+      const panel = document.getElementById('panel-' + tab);
+      const btn = document.getElementById('tab-btn-' + tab);
+      
+      if (panel && btn) {
+        if (tab === targetTab) {
+          panel.classList.remove('hidden');
+          panel.classList.add('flex');
+          btn.className = 'admin-tab-btn w-full flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-left transition-colors bg-primary-container text-on-primary font-semibold shadow-sm';
+          const icon = btn.querySelector('.material-symbols-outlined');
+          if (icon) icon.className = 'material-symbols-outlined text-[20px] text-on-primary';
+          const subtitle = btn.querySelector('.font-label-sm');
+          if (subtitle) {
+            subtitle.className = 'font-label-sm text-[10px] text-on-primary/80';
+          }
+        } else {
+          panel.classList.add('hidden');
+          panel.classList.remove('flex');
+          btn.className = 'admin-tab-btn w-full flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-left transition-colors text-on-surface-variant hover:bg-surface-container font-medium';
+          const icon = btn.querySelector('.material-symbols-outlined');
+          if (icon) icon.className = 'material-symbols-outlined text-[20px] text-outline';
+          const subtitle = btn.querySelector('.font-label-sm');
+          if (subtitle) {
+            subtitle.className = 'font-label-sm text-[10px] text-outline';
+          }
+        }
+      }
+    });
+  }
+</script></main></div></body></html>

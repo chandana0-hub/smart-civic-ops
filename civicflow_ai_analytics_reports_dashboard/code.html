@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#f8f9ff","surface-bright":"#f8f9ff","surface-tint":"#0053db","on-primary":"#ffffff","on-surface":"#0b1c30","secondary-fixed-dim":"#4cd7f6","on-error-container":"#93000a","on-primary-fixed":"#00174b","on-secondary-fixed-variant":"#004e5c","tertiary-container":"#656c89","surface-container-low":"#eff4ff","tertiary-fixed-dim":"#bec5e5","surface-container":"#e5eeff","secondary":"#00687a","secondary-fixed":"#acedff","tertiary-fixed":"#dbe1ff","on-tertiary-container":"#eeefff","primary-container":"#2563eb","surface-container-highest":"#d3e4fe","inverse-on-surface":"#eaf1ff","outline-variant":"#c3c6d7","tertiary":"#4c546f","surface-dim":"#cbdbf5","secondary-container":"#57dffe","on-secondary":"#ffffff","background":"#f8f9ff","on-secondary-fixed":"#001f26","surface-container-high":"#dce9ff","primary":"#004ac6","outline":"#737686","inverse-surface":"#213145","on-background":"#0b1c30","on-tertiary-fixed-variant":"#3e4660","on-tertiary-fixed":"#131a33","surface-variant":"#d3e4fe","primary-fixed-dim":"#b4c5ff","inverse-primary":"#b4c5ff","on-surface-variant":"#434655","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","on-secondary-container":"#006172","primary-fixed":"#dbe1ff","error":"#ba1a1a","on-primary-container":"#eeefff","on-primary-fixed-variant":"#003ea8","error-container":"#ffdad6","on-error":"#ffffff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-lg":"1.5rem","margin":"1rem","space-md":"1rem","space-xs":"0.25rem","margin-lg":"2rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1rem","space-xl":"2rem"},fontFamily:{"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"telemetry-code":["JetBrains Mono"],"display-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-md":["Inter"]},fontSize:{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"telemetry-code":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"display-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)] select-none"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-lg flex items-center gap-space-sm bg-inverse-surface"><img alt="CivicFlow AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Uey_YqHth-Yd2VybwCWfDEsKLBmEOjeXIkj9fKD--qY2unrds2X14-ijodW108kfgfnzVruFNYZmLWW5jrnXV2OIIItG6PSVq3DXin2WmEAp42RG9UwUYMMstnL0bnPAPQV78c3XMly_GMGmhuIIH12d7msFvbbHSu1-WGE9B5e-T9svtRy6p54dE7YD8s2suau_cKNgyfWBJEerI9PETgR6u1CtL9d-T5V1AUWjow"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary font-bold">CivicFlow AI</span></div><span class="font-telemetry-code text-[10px] uppercase tracking-wider text-secondary-fixed font-semibold">AI Operations Hub</span></div></div><div class="overflow-y-auto flex-1 px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Command Center</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="overview" href="#"><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="city-operations-map" href="#"><span class="font-label-md text-label-md">City Operations Map</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="incident-dispatch" href="#"><span class="font-label-md text-label-md">Incident Dispatch</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Intelligence</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="agentic-workflows" href="#"><span class="font-label-md text-label-md">Agentic Workflows</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="ai-agent-activity" href="#"><span class="font-label-md text-label-md">AI Agent Activity</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="automated-triage" href="#"><span class="font-label-md text-label-md">Automated Triage</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Municipal Fleet &amp; Units</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="departments" href="#"><span class="font-label-md text-label-md">Departments</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="field-crews" href="#"><span class="font-label-md text-label-md">Field Crews</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="iot-sensor-matrix" href="#"><span class="font-label-md text-label-md">IoT Sensor Matrix</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Analytics &amp; Reports</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl transition-all bg-primary-container text-on-primary font-semibold shadow-sm" data-path="resolution-velocity" href="#"><span class="font-label-md text-label-md">Resolution Velocity</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="citizen-feedback" href="#"><span class="font-label-md text-label-md">Citizen Feedback</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="audit-logs" href="#"><span class="font-label-md text-label-md">Audit Logs</span></a></nav></div></div></div><div class="p-space-md m-space-md rounded-xl bg-inverse-surface/80 shadow-[0_1px_8px_rgba(0,0,0,0.2)]"><div class="flex items-start gap-space-sm"><span class="relative flex h-2.5 w-2.5 mt-1"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><div class="flex flex-col gap-0.5"><span class="font-telemetry-code text-[11px] font-semibold text-on-primary">Civic LLM Core v4.2</span><p class="font-body-sm text-[11px] leading-tight text-outline-variant">All Autonomous Agents Active (99.98% SLA)</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 flex items-center justify-between px-gutter-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container rounded-xl text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px] text-primary">location_city</span><span class="font-label-md text-label-md font-semibold">Metropolis Capital District (Zone A-F)</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></div><div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-high rounded-full"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-telemetry-code text-[11px] font-semibold text-primary">Routing: ACTIVE</span></div></div><div class="flex-1 max-w-xl mx-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-xl outline-none transition-all shadow-[0_1px_3px_rgba(11,19,43,0.04)] focus:shadow-[0_0_0_2px_rgba(37,99,235,0.2)]" placeholder="Search tickets, geofences, dispatch units, or citizen IDs (Ctrl + K)..." type="text"/><kbd class="absolute right-3 font-telemetry-code text-[10px] text-outline bg-surface-container px-1.5 py-0.5 rounded">Ctrl+K</kbd></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-sm py-1.5 bg-error-container text-on-error-container font-label-md text-label-md font-semibold rounded-xl hover:bg-error hover:text-on-error transition-all shadow-[0_1px_3px_rgba(11,19,43,0.04)]" type="button"><span class="material-symbols-outlined text-[16px]">campaign</span><span>Broadcast</span></button><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary">wb_sunny</span><span class="font-telemetry-code text-[12px]">72°F</span><span class="text-outline-variant">|</span><span class="font-telemetry-code text-[12px]">UTC-5 10:42 AM</span></div><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-telemetry-code text-[9px] font-bold">14</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEukjLM-BIt-tavLbDoUmQpI25WLx0OPv23EfWnq5jF4W5-oswagEILE2t0HVm5dgMPETS7NkjXUhs178sJgHzQPhevSANnSlQXVA7mBKtyaO8TiOCOe4k0Fast4cQlTTT9JEWEvnecNDU_wuQ95_lsh9ynOd0KZogCitv-Y12pEr4pDrNnL2jM3ppRsbTz8_4Njs32wGX_0ps0y0Ci7Uc_pQDLG4w386TNL25Pys"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">Director Marcus Vance</span><span class="font-label-sm text-label-sm text-outline">Chief Municipal Operations Officer</span></div><span class="material-symbols-outlined text-[18px] text-outline cursor-pointer">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Command Header & Breadcrumb Toolbar -->
+<section class="px-gutter-lg pt-space-lg pb-space-md bg-surface border-b border-surface-container-high/60">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Breadcrumb and View Meta -->
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-outline">
+<span>Civic Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Analytics &amp; Reports</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Executive Intelligence &amp; Resolution Velocity</span>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+            Executive Velocity &amp; Directorate Intelligence
+          </h1>
+<div class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-high rounded-full">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-telemetry-code text-[11px] text-on-surface-variant font-medium">
+              Live Telemetry (30s batch) • 12,840 Records Analyzed
+            </span>
+</div>
+</div>
+</div>
+<!-- Action & Filter Ribbon -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<!-- Date Range Filter -->
+<div class="relative inline-flex items-center bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-outline ml-3">calendar_month</span>
+<select class="bg-transparent pl-2 pr-8 py-2 font-label-md text-label-md text-on-surface appearance-none focus:outline-none cursor-pointer" id="timeRangeSelect">
+<option value="24h">Last 24 Hours</option>
+<option value="7d">Last 7 Days</option>
+<option selected="" value="30d">Last 30 Days</option>
+<option value="quarter">Q3 Fiscal Cycle</option>
+<option value="ytd">Year to Date (2024)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 pointer-events-none text-[16px] text-outline">expand_more</span>
+</div>
+<!-- Prior Cycle Toggle -->
+<button class="flex items-center gap-space-xs px-3 py-2 bg-surface-container-lowest hover:bg-surface-container transition-colors rounded-xl shadow-sm text-on-surface" id="togglePriorCycle" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">compare_arrows</span>
+<span class="font-label-md text-label-md font-medium">Compare Prior Cycle</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-telemetry-code bg-surface-container-high text-primary font-bold" id="cycleIndicator">ON</span>
+</button>
+<!-- Export CSV Button -->
+<button class="flex items-center gap-space-xs px-3.5 py-2 bg-surface-container-lowest hover:bg-surface-container-low transition-colors rounded-xl shadow-sm text-on-surface font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">download</span>
+<span>Export CSV</span>
+</button>
+<!-- Export PDF Dossier Button -->
+<button class="flex items-center gap-space-xs px-4 py-2 bg-primary hover:bg-on-primary-fixed-variant transition-colors rounded-xl text-on-primary font-label-md text-label-md font-semibold shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Export PDF Executive Brief</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Canvas -->
+<div class="px-gutter-lg py-space-lg space-y-space-xl">
+<!-- Section 1: KPI Stat Cards Grid (6 Columns) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md">
+<!-- Card 1: Total Inflow -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Complaints Ingested</span>
+<span class="p-1 rounded-lg bg-surface-container-high text-primary material-symbols-outlined text-[18px]">inbox</span>
+</div>
+<div class="my-space-sm">
+<div class="font-display-lg text-[32px] leading-tight font-headline-lg text-on-surface font-bold tracking-tight">14,892</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm">
+<span class="flex items-center text-secondary font-semibold font-telemetry-code">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +8.4%
+            </span>
+<span class="text-outline">vs prior mo</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-telemetry-code text-[11px] text-on-surface-variant font-medium">512 daily avg</span>
+<span class="font-telemetry-code text-[11px] text-secondary font-semibold">Normalized</span>
+</div>
+</div>
+<!-- Card 2: Complaints Resolved -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Resolved Tickets</span>
+<span class="p-1 rounded-lg bg-surface-container-high text-primary material-symbols-outlined text-[18px]">task_alt</span>
+</div>
+<div class="my-space-sm">
+<div class="font-display-lg text-[32px] leading-tight font-headline-lg text-on-surface font-bold tracking-tight">13,745</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm">
+<span class="flex items-center text-secondary font-semibold font-telemetry-code">
+<span class="material-symbols-outlined text-[14px]">speed</span> +12.1%
+            </span>
+<span class="text-outline">velocity index</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 font-telemetry-code text-[11px] text-on-secondary-fixed font-semibold">92.3% Efficiency</span>
+<span class="text-outline-variant font-telemetry-code text-[11px]">1,147 active</span>
+</div>
+</div>
+<!-- Card 3: Avg Resolution SLA -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Avg Resolution Time</span>
+<span class="p-1 rounded-lg bg-surface-container-high text-primary material-symbols-outlined text-[18px]">timer</span>
+</div>
+<div class="my-space-sm">
+<div class="font-display-lg text-[32px] leading-tight font-headline-lg text-on-surface font-bold tracking-tight">3.4h <span class="font-body-md text-label-md text-outline">SLA Avg</span></div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm">
+<span class="flex items-center text-secondary font-semibold font-telemetry-code">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> -42m
+            </span>
+<span class="text-outline">vs 4.2h baseline</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-telemetry-code text-[11px] text-on-surface font-medium">Metropolis Standard</span>
+<span class="text-secondary font-telemetry-code text-[11px] font-semibold">-19.8%</span>
+</div>
+</div>
+<!-- Card 4: Closure Rate Target -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Resolution Rate</span>
+<span class="p-1 rounded-lg bg-surface-container-high text-primary material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="my-space-sm">
+<div class="font-display-lg text-[32px] leading-tight font-headline-lg text-on-surface font-bold tracking-tight">92.3%</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm">
+<span class="flex items-center text-primary font-semibold font-telemetry-code">
+              +2.3% Above Target
+            </span>
+<span class="text-outline">(Target: 90%)</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mr-2">
+<div class="bg-primary h-full rounded-full" style="width: 92.3%"></div>
+</div>
+<span class="text-primary font-telemetry-code text-[11px] font-bold">Optimal</span>
+</div>
+</div>
+<!-- Card 5: AI Swarm Autonomous Success -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Autonomous Agent Rate</span>
+<span class="p-1 rounded-lg bg-secondary-fixed/40 text-secondary material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="my-space-sm">
+<div class="font-display-lg text-[32px] leading-tight font-headline-lg text-on-surface font-bold tracking-tight">96.8%</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm">
+<span class="text-secondary font-semibold font-telemetry-code">14,280 Auto Tasks</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/40 font-telemetry-code text-[11px] text-on-secondary-fixed font-bold">94.2% Zero-Human</span>
+<span class="text-outline font-telemetry-code text-[11px]">5.8% HITL</span>
+</div>
+</div>
+<!-- Card 6: Citizen CSAT Rating -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Citizen CSAT</span>
+<span class="p-1 rounded-lg bg-surface-container-high text-primary material-symbols-outlined text-[18px]">sentiment_very_satisfied</span>
+</div>
+<div class="my-space-sm">
+<div class="font-display-lg text-[32px] leading-tight font-headline-lg text-on-surface font-bold tracking-tight">4.82<span class="font-body-md text-label-md text-outline"> / 5.0</span></div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm">
+<span class="flex items-center text-secondary font-semibold font-telemetry-code">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +0.32 pts
+            </span>
+<span class="text-outline">6mo surge</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-telemetry-code text-[11px] text-on-surface-variant font-medium">11,420 Verified</span>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Deep-Dive Core Visualizations (2 Columns) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Inflow vs Outflow Trend Chart -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Complaints Inflow vs. Resolution Velocity</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container font-telemetry-code text-[11px] text-on-surface font-semibold">T-30 Days</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">High-frequency telemetry: Inflow velocity vs Autonomous Swarm and Field Crew closures</p>
+</div>
+<!-- Filter pills -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl gap-1">
+<button class="px-2.5 py-1 text-[11px] font-label-md font-semibold bg-surface-container-lowest rounded-lg text-primary shadow-sm">Daily Inflow</button>
+<button class="px-2.5 py-1 text-[11px] font-label-md font-medium text-outline hover:text-on-surface">Cumulative SLA</button>
+<button class="px-2.5 py-1 text-[11px] font-label-md font-medium text-outline hover:text-on-surface">Auto Triage Ratio</button>
+</div>
+</div>
+<!-- Metric Legend -->
+<div class="flex items-center gap-space-md py-2 border-b border-surface-container-low text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<span class="text-on-surface-variant font-medium">New Complaints Ingested</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-on-surface-variant font-medium">Autonomous Agent Resolved (78%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+<span class="text-on-surface-variant font-medium">Field Crew Dispatch Closed (22%)</span>
+</div>
+</div>
+<!-- Inline High-Fidelity SVG Area Chart -->
+<div class="relative w-full h-72 mt-space-md">
+<!-- Incident Annotation Badge -->
+<div class="absolute left-[54%] top-6 -translate-x-1/2 z-10 hidden sm:flex items-center gap-1.5 px-2.5 py-1 bg-inverse-surface text-inverse-on-surface rounded-xl shadow-lg border border-secondary-fixed/30 text-[11px] font-telemetry-code">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span>Oct 24: #CIV-9042 Water Rupture Influx (2.1h Swarm Containment)</span>
+</div>
+<svg class="w-full h-full overflow-visible" fill="none" preserveaspectratio="none" viewbox="0 0 700 240">
+<defs>
+<lineargradient id="primaryAreaGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#004ac6" stop-opacity="0.28"></stop>
+<stop offset="100%" stop-color="#004ac6" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="cyanAreaGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4cd7f6" stop-opacity="0.32"></stop>
+<stop offset="100%" stop-color="#4cd7f6" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Lines -->
+<line stroke="#d3e4fe" stroke-dasharray="4 4" stroke-width="0.8" x1="0" x2="700" y1="30" y2="30"></line>
+<line stroke="#d3e4fe" stroke-dasharray="4 4" stroke-width="0.8" x1="0" x2="700" y1="80" y2="80"></line>
+<line stroke="#d3e4fe" stroke-dasharray="4 4" stroke-width="0.8" x1="0" x2="700" y1="130" y2="130"></line>
+<line stroke="#d3e4fe" stroke-dasharray="4 4" stroke-width="0.8" x1="0" x2="700" y1="180" y2="180"></line>
+<line stroke="#c3c6d7" stroke-width="1" x1="0" x2="700" y1="230" y2="230"></line>
+<!-- Ingested Curve (Outline gray) -->
+<path d="M 0,160 Q 50,140 100,150 T 200,130 T 300,110 T 380,40 T 450,120 T 550,100 T 630,90 T 700,70" fill="none" stroke="#737686" stroke-linecap="round" stroke-width="2"></path>
+<!-- Autonomous Resolved Area & Line -->
+<path d="M 0,180 Q 50,165 100,170 T 200,150 T 300,130 T 380,60 T 450,135 T 550,115 T 630,105 T 700,85 L 700,230 L 0,230 Z" fill="url(#primaryAreaGrad)"></path>
+<path d="M 0,180 Q 50,165 100,170 T 200,150 T 300,130 T 380,60 T 450,135 T 550,115 T 630,105 T 700,85" fill="none" stroke="#004ac6" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Crew Resolved Line (Cyan) -->
+<path d="M 0,210 Q 50,205 100,200 T 200,195 T 300,185 T 380,140 T 450,185 T 550,175 T 630,170 T 700,160" fill="none" stroke="#00687a" stroke-dasharray="5 3" stroke-width="2"></path>
+<!-- Spike Marker -->
+<circle cx="380" cy="40" fill="#ba1a1a" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<line stroke="#ba1a1a" stroke-dasharray="2 2" stroke-width="1.2" x1="380" x2="380" y1="40" y2="230"></line>
+</svg>
+<!-- Timeline X-Axis Labels -->
+<div class="flex justify-between text-[11px] font-telemetry-code text-outline mt-2">
+<span>Oct 01</span>
+<span>Oct 07</span>
+<span>Oct 14</span>
+<span class="text-error font-semibold">Oct 21-24 (Surge)</span>
+<span>Oct 28</span>
+<span>Nov 01</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="text-on-surface">Mean Swarm Classification Latency: <strong class="font-telemetry-code text-primary">164ms</strong></span>
+</div>
+<span class="font-telemetry-code text-[11px] text-outline">Statistical Confidence: 99.4% • ISO-37120 Municipal Standard</span>
+</div>
+</div>
+<!-- Department-Wise Resolution Efficiency Matrix -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Directorate Performance Matrix</h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Ranked Efficiency</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Ingested workload vs verified resolution clearance across key directorates</p>
+<!-- 6 Municipal Directorates Stacked Matrix -->
+<div class="space-y-3.5">
+<!-- Directorate 1: Public Health & Sanitation (Rank #1) -->
+<div class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-body-sm font-body-sm mb-1">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold">#1</span>
+<span class="font-semibold text-on-surface">Public Health &amp; Sanitation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[12px] font-semibold text-secondary">98.1%</span>
+<span class="text-[11px] text-outline">1,032/1,052</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 98.1%"></div>
+</div>
+</div>
+<!-- Directorate 2: Electricity & Grid (Rank #2) -->
+<div class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-body-sm font-body-sm mb-1">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold">#2</span>
+<span class="font-semibold text-on-surface">Electricity &amp; Grid Infrastructure</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[12px] font-semibold text-secondary">97.4%</span>
+<span class="text-[11px] text-outline">2,815/2,890</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 97.4%"></div>
+</div>
+</div>
+<!-- Directorate 3: Water & Drainage (Rank #3) -->
+<div class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-body-sm font-body-sm mb-1">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold">#3</span>
+<span class="font-semibold text-on-surface">Water Systems &amp; Drainage</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[12px] font-semibold text-secondary">96.2%</span>
+<span class="text-[11px] text-outline">3,280/3,410</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 96.2%"></div>
+</div>
+</div>
+<!-- Directorate 4: Traffic & Signal Ops (Rank #4) -->
+<div class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-body-sm font-body-sm mb-1">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold">#4</span>
+<span class="font-semibold text-on-surface">Traffic Control &amp; Signal Matrix</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[12px] font-semibold text-secondary">95.8%</span>
+<span class="text-[11px] text-outline">1,188/1,240</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 95.8%"></div>
+</div>
+</div>
+<!-- Directorate 5: Waste Management (Rank #5) -->
+<div class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-body-sm font-body-sm mb-1">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold">#5</span>
+<span class="font-semibold text-on-surface">Municipal Waste Logistics</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[12px] font-semibold text-secondary">94.5%</span>
+<span class="text-[11px] text-outline">2,060/2,180</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 94.5%"></div>
+</div>
+</div>
+<!-- Directorate 6: Roads & Heavy Infrastructure (Rank #6) -->
+<div class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-body-sm font-body-sm mb-1">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container-highest text-outline font-bold">#6</span>
+<span class="font-semibold text-on-surface">Roads &amp; Civil Infrastructure</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-[12px] font-semibold text-primary">91.8%</span>
+<span class="text-[11px] text-outline">3,782/4,120</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 91.8%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-outline">All Directorates meet &gt;90% SLA baseline</span>
+<button class="text-primary font-label-md text-label-md font-semibold hover:underline flex items-center gap-1">
+<span>Drilldown By Shift</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 3: Advanced Multi-Dimensional Analytics (3-Column Intelligence Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Column A: Category Distribution & MTTR -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Category Distribution</h3>
+<span class="material-symbols-outlined text-outline">pie_chart</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Breakdown by issue class &amp; Mean Time to Resolution (MTTR)</p>
+<!-- Visual Donut Meter SVG -->
+<div class="flex items-center justify-center my-space-sm relative">
+<svg class="w-44 h-44 -rotate-90" viewbox="0 0 100 100">
+<!-- Water 28% -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#004ac6" stroke-dasharray="70.37 251.32" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Roads 26% -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#00687a" stroke-dasharray="65.34 251.32" stroke-dashoffset="-70.37" stroke-width="12"></circle>
+<!-- Electricity 19% -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#2563eb" stroke-dasharray="47.75 251.32" stroke-dashoffset="-135.71" stroke-width="12"></circle>
+<!-- Sanitation 15% -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#4cd7f6" stroke-dasharray="37.7 251.32" stroke-dashoffset="-183.46" stroke-width="12"></circle>
+<!-- Traffic 8% -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#656c89" stroke-dasharray="20.1 251.32" stroke-dashoffset="-221.16" stroke-width="12"></circle>
+<!-- Other 4% -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#c3c6d7" stroke-dasharray="10.05 251.32" stroke-dashoffset="-241.26" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center">
+<span class="font-display-lg text-[22px] font-bold text-on-surface leading-tight">14.8k</span>
+<span class="text-[11px] font-label-sm uppercase text-outline">Classified</span>
+</div>
+</div>
+<!-- Category Legend with MTTR -->
+<div class="space-y-2 mt-space-md text-body-sm font-body-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary"></span>
+<span>Water &amp; Drainage Surge</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-semibold text-on-surface">28%</span>
+<span class="font-telemetry-code text-[11px] text-outline">MTTR: 2.1h</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span>
+<span>Roads &amp; Arterial Potholes</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-semibold text-on-surface">26%</span>
+<span class="font-telemetry-code text-[11px] text-outline">MTTR: 4.8h</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<span>Grid &amp; Streetlighting</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-semibold text-on-surface">19%</span>
+<span class="font-telemetry-code text-[11px] text-outline">MTTR: 1.8h</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary-fixed-dim"></span>
+<span>Sanitation &amp; Overflow</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-semibold text-on-surface">15%</span>
+<span class="font-telemetry-code text-[11px] text-outline">MTTR: 2.4h</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary-container"></span>
+<span>Traffic Signal Desync</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-semibold text-on-surface">8%</span>
+<span class="font-telemetry-code text-[11px] text-outline">MTTR: 1.1h</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-[11px] font-telemetry-code text-outline border-t border-surface-container">
+          Real-time CV taxonomy model v4.2 applied
+        </div>
+</div>
+<!-- Column B: Metropolis Zones A-F Telemetry Heatmap -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Zone Telemetry &amp; Hotspots</h3>
+<span class="material-symbols-outlined text-outline">near_me</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Geographic workload distribution across Metropolis Zones A through F</p>
+<!-- Zone Telemetry Rows -->
+<div class="space-y-3">
+<!-- Zone A -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center font-telemetry-code font-bold text-on-surface text-[12px]">A</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Zone A (Financial Core)</div>
+<div class="text-[11px] font-telemetry-code text-outline">2,140 reports • 2.8h avg SLA</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-telemetry-code text-[12px] font-bold text-secondary">97.1%</span>
+<div class="w-16 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full" style="width: 97.1%"></div>
+</div>
+</div>
+</div>
+<!-- Zone B -->
+<div class="p-2 rounded-xl bg-secondary-fixed/20 border-l-4 border-secondary flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-telemetry-code font-bold text-[12px]">B</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span>Zone B (Downtown/Harbor)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+</div>
+<div class="text-[11px] font-telemetry-code text-outline">3,890 reports • Active rupture zone</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-telemetry-code text-[12px] font-bold text-on-surface">94.2%</span>
+<div class="w-16 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full" style="width: 94.2%"></div>
+</div>
+</div>
+</div>
+<!-- Zone C -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center font-telemetry-code font-bold text-on-surface text-[12px]">C</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Zone C (East Industrial)</div>
+<div class="text-[11px] font-telemetry-code text-outline">1,940 reports • 3.5h avg SLA</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-telemetry-code text-[12px] font-bold text-secondary">93.8%</span>
+<div class="w-16 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full" style="width: 93.8%"></div>
+</div>
+</div>
+</div>
+<!-- Zone D -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center font-telemetry-code font-bold text-on-surface text-[12px]">D</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Zone D (Residential North)</div>
+<div class="text-[11px] font-telemetry-code text-outline">3,120 reports • 2.9h avg SLA</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-telemetry-code text-[12px] font-bold text-secondary">96.5%</span>
+<div class="w-16 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full" style="width: 96.5%"></div>
+</div>
+</div>
+</div>
+<!-- Zone E -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center font-telemetry-code font-bold text-on-surface text-[12px]">E</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Zone E (South Corridor)</div>
+<div class="text-[11px] font-telemetry-code text-error font-medium">Pothole cluster • 4.1h SLA</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-telemetry-code text-[12px] font-bold text-error">89.4%</span>
+<div class="w-16 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-error h-full" style="width: 89.4%"></div>
+</div>
+</div>
+</div>
+<!-- Zone F -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center font-telemetry-code font-bold text-on-surface text-[12px]">F</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Zone F (Innovation Park)</div>
+<div class="text-[11px] font-telemetry-code text-secondary font-semibold">1,322 reports • 1.9h SLA Top</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-telemetry-code text-[12px] font-bold text-secondary">98.6%</span>
+<div class="w-16 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full" style="width: 98.6%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-body-sm font-body-sm border-t border-surface-container">
+<span class="text-outline">GIS Spatial Resolution: Sector Quad-4</span>
+<a class="text-primary font-semibold hover:underline" href="#">View Map</a>
+</div>
+</div>
+<!-- Column C: Autonomous Agent Swarm Benchmark -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Autonomous Swarm Benchmark</h3>
+<span class="material-symbols-outlined text-primary">memory</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Accuracy, precision, and latency telemetry across 6 sub-agents</p>
+<!-- Swarm Sub-Agents Benchmarks -->
+<div class="space-y-2.5">
+<!-- Agent 1 -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Classification Agent</div>
+<div class="text-[11px] font-telemetry-code text-outline">Multi-modal Ingestion</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-telemetry-code text-[12px] text-primary font-bold">99.6% Acc</span>
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">180ms</span>
+</div>
+</div>
+<!-- Agent 2 -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Priority Assessment Agent</div>
+<div class="text-[11px] font-telemetry-code text-outline">Emergency P1-P4 triage</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-telemetry-code text-[12px] text-primary font-bold">98.9% Prec</span>
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">95ms</span>
+</div>
+</div>
+<!-- Agent 3 -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Department Assignment Agent</div>
+<div class="text-[11px] font-telemetry-code text-outline">Autonomous Routing</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-telemetry-code text-[12px] text-primary font-bold">99.8% Prec</span>
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">120ms</span>
+</div>
+</div>
+<!-- Agent 4 -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Field Dispatch Agent</div>
+<div class="text-[11px] font-telemetry-code text-outline">Crew Geofence Match</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-telemetry-code text-[12px] text-primary font-bold">99.1% Eff</span>
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">340ms</span>
+</div>
+</div>
+<!-- Agent 5 -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Resolution Verification Agent</div>
+<div class="text-[11px] font-telemetry-code text-outline">Computer Vision Post-Repair</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-telemetry-code text-[12px] text-primary font-bold">97.8% CV</span>
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">420ms</span>
+</div>
+</div>
+<!-- Agent 6 -->
+<div class="p-2 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Citizen Notification Agent</div>
+<div class="text-[11px] font-telemetry-code text-outline">Omnichannel SMS/Voice</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-telemetry-code text-[12px] text-primary font-bold">99.9% Deliv</span>
+<span class="font-telemetry-code text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">88ms</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Human In The Loop Breakdown Bar -->
+<div class="mt-space-md pt-space-sm border-t border-surface-container space-y-1.5">
+<div class="flex justify-between text-[11px] font-telemetry-code">
+<span class="text-secondary font-bold">Autonomous: 94.2%</span>
+<span class="text-outline font-semibold">Human Intervention: 5.8%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 94.2%"></div>
+<div class="bg-tertiary-container h-full" style="width: 5.8%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: High-Priority Trends & Citizen CSAT Trajectory (Split 2-Panel) -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Panel 1: Critical Containment Trend -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">P1 Critical &amp; P2 Containment Velocity</h3>
+</div>
+<span class="font-telemetry-code text-[11px] px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">
+              Emergency SLA: -55.6% Duration
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Mean containment duration for water ruptures, live wires, and arterial blockages</p>
+<!-- SVG Sparkline for Containment Time Drops -->
+<div class="h-44 w-full relative">
+<svg class="w-full h-full overflow-visible" fill="none" viewbox="0 0 500 140">
+<path d="M 0,20 Q 80,35 150,60 T 300,95 T 420,115 T 500,122" fill="none" stroke="#ba1a1a" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M 0,20 Q 80,35 150,60 T 300,95 T 420,115 T 500,122 L 500,140 L 0,140 Z" fill="url(#errorGradient)" opacity="0.12"></path>
+<defs>
+<lineargradient id="errorGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ba1a1a"></stop>
+<stop offset="100%" stop-color="#ffffff"></stop>
+</lineargradient>
+</defs>
+<!-- Data Points -->
+<circle cx="0" cy="20" fill="#ba1a1a" r="4"></circle>
+<circle cx="150" cy="60" fill="#ba1a1a" r="4"></circle>
+<circle cx="300" cy="95" fill="#ba1a1a" r="4"></circle>
+<circle cx="500" cy="122" fill="#ba1a1a" r="4"></circle>
+</svg>
+<div class="flex justify-between text-[11px] font-telemetry-code text-outline mt-2">
+<span>May Baseline: 64.0m</span>
+<span>Jul: 48.2m</span>
+<span>Sep: 36.5m</span>
+<span class="text-error font-bold">Current: 28.4 mins</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low">
+<div class="font-telemetry-code text-[11px] text-outline">First Ping to Dispatch</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">2.4 mins</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low">
+<div class="font-telemetry-code text-[11px] text-outline">On-Scene Arrival</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">14.2 mins</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low">
+<div class="font-telemetry-code text-[11px] text-outline">Site Containment</div>
+<div class="font-headline-sm text-headline-sm text-secondary font-bold">28.4 mins</div>
+</div>
+</div>
+</div>
+<!-- Panel 2: Citizen CSAT 6-Month Trajectory -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">trending_up</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Citizen Satisfaction (CSAT) Momentum</h3>
+</div>
+<span class="font-telemetry-code text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">
+              6-Month Longitudinal
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Verified survey ratings from 11,420 automated SMS/Web resolution confirmations</p>
+<!-- 6-Month Bar Stepper Progression -->
+<div class="grid grid-cols-6 gap-2.5 items-end h-40 pt-4">
+<div class="flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="font-telemetry-code text-[11px] text-outline">4.10</span>
+<div class="w-full bg-surface-container-highest rounded-t-lg" style="height: 60%"></div>
+<span class="font-telemetry-code text-[11px] text-outline">Jun</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="font-telemetry-code text-[11px] text-outline">4.30</span>
+<div class="w-full bg-surface-container-highest rounded-t-lg" style="height: 68%"></div>
+<span class="font-telemetry-code text-[11px] text-outline">Jul</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="font-telemetry-code text-[11px] text-outline">4.50</span>
+<div class="w-full bg-surface-container-highest rounded-t-lg" style="height: 76%"></div>
+<span class="font-telemetry-code text-[11px] text-outline">Aug</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="font-telemetry-code text-[11px] text-outline">4.62</span>
+<div class="w-full bg-primary-container/60 rounded-t-lg" style="height: 84%"></div>
+<span class="font-telemetry-code text-[11px] text-outline">Sep</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="font-telemetry-code text-[11px] text-outline">4.74</span>
+<div class="w-full bg-primary rounded-t-lg" style="height: 92%"></div>
+<span class="font-telemetry-code text-[11px] text-outline">Oct</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="font-telemetry-code text-[11px] text-secondary font-bold">4.82</span>
+<div class="w-full bg-secondary rounded-t-lg shadow-sm" style="height: 98%"></div>
+<span class="font-telemetry-code text-[11px] text-secondary font-bold">Current</span>
+</div>
+</div>
+</div>
+<!-- Key Driving Factors Chips -->
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex flex-wrap gap-2 text-body-sm font-body-sm">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Transparent SMS Updates
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Computer-Vision Verified Photos
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Sub-4h Total Resolution
+          </span>
+</div>
+</div>
+</section>
+<!-- Section 5: Official Municipal Reports & Scheduled Export Matrix -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Official Municipal Reports &amp; Dossiers</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container font-telemetry-code text-[11px] text-on-surface font-semibold">Audit Compliant</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Pre-compiled municipal briefs ready for executive council dispatch and open data publication</p>
+</div>
+<!-- Quick Generate Drawer Trigger -->
+<button class="flex items-center gap-space-xs px-4 py-2 bg-surface-container-high hover:bg-surface-container-highest transition-colors rounded-xl text-primary font-label-md text-label-md font-semibold" id="openReportModal" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Generate Custom Dossier</span>
+</button>
+</div>
+<!-- Report Cards Grid (4 Pre-built Reports) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md pt-space-xs">
+<!-- Report 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-telemetry-code bg-surface-container-highest text-primary font-bold">DAILY</span>
+<span class="text-outline font-telemetry-code text-[11px]">Today 06:00 UTC</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Daily Civic Operations Digest</h4>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">Executive snapshot of overnight intakes, emergency P1 containment metrics, and automated triage distribution.</p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-telemetry-code text-[11px] text-outline">PDF • 4.2 MB</span>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-primary hover:text-on-primary transition-colors text-primary flex items-center justify-center shadow-sm" title="Download PDF">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- Report 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-telemetry-code bg-surface-container-highest text-secondary font-bold">WEEKLY</span>
+<span class="text-outline font-telemetry-code text-[11px]">Oct 18 - Oct 25</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Swarm Dispatch &amp; Fleet SLA Report</h4>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">In-depth telematics on autonomous agent field coordination, crew route efficiencies, and vehicle turnaround times.</p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-telemetry-code text-[11px] text-outline">PDF 8.7MB • CSV 1.4MB</span>
+<div class="flex items-center gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-primary hover:text-on-primary transition-colors text-primary flex items-center justify-center shadow-sm" title="Download CSV">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-primary hover:text-on-primary transition-colors text-primary flex items-center justify-center shadow-sm" title="Download PDF">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Report 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-telemetry-code bg-surface-container-highest text-primary font-bold">MONTHLY</span>
+<span class="text-outline font-telemetry-code text-[11px]">Sep - Oct Review</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Directorate Performance Audit</h4>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">Comprehensive municipal audit covering 6 directorates, budget compliance, and year-over-year resolution velocities.</p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-telemetry-code text-[11px] text-outline">PDF • 14.1 MB</span>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-primary hover:text-on-primary transition-colors text-primary flex items-center justify-center shadow-sm" title="Download PDF">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- Report 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-telemetry-code bg-surface-container-highest text-secondary font-bold">FINANCIAL</span>
+<span class="text-outline font-telemetry-code text-[11px]">Q3 Close</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Cost-Per-Resolution Ledger</h4>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">Fiscal breakdown of autonomous vs contractor vs manual intervention cost structures across Metropolis sectors.</p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-telemetry-code text-[11px] text-outline">CSV • 3.8 MB</span>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-primary hover:text-on-primary transition-colors text-primary flex items-center justify-center shadow-sm" title="Download Dataset">
+<span class="material-symbols-outlined text-[18px]">table_chart</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Custom Report Generator Modal / Drawer Overlay -->
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden items-center justify-center p-4" id="reportModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl relative space-y-space-md">
+<div class="flex items-center justify-between border-b border-surface-container pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Configure Executive Dossier</h3>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" id="closeReportModal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md font-body-sm text-body-sm">
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1">Time Horizon</label>
+<select class="w-full bg-surface-container-low rounded-xl px-3 py-2 text-on-surface font-label-md text-label-md focus:outline-none">
+<option>Last 30 Days (Standard Audit Cycle)</option>
+<option>Last 7 Days (Tactical Sprint)</option>
+<option>Q3 Comprehensive</option>
+<option>Custom Date Window...</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1">Target Directorate Scope</label>
+<div class="grid grid-cols-2 gap-2 text-body-sm font-body-sm">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="accent-primary" type="checkbox"/>
+<span>All 6 Municipal Agencies</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="accent-primary" type="checkbox"/>
+<span>Water &amp; Drainage Only</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="accent-primary" type="checkbox"/>
+<span>Roads &amp; Transport</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="accent-primary" type="checkbox"/>
+<span>Autonomous Swarm Only</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1">Export Format</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="p-2 rounded-xl bg-surface-container text-primary font-semibold border-2 border-primary text-center">PDF Dossier</button>
+<button class="p-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container text-center">Raw CSV</button>
+<button class="p-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container text-center">Presentation</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm border-t border-surface-container">
+<button class="px-4 py-2 rounded-xl text-outline hover:text-on-surface font-label-md text-label-md" id="cancelModalBtn">Cancel</button>
+<button class="px-5 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm hover:bg-on-primary-fixed-variant transition-colors flex items-center gap-1.5" id="generateModalBtn">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Generate Brief</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inline Script for UI Micro-Interactions -->
+<script>
+    (function initAnalyticsInteractions() {
+      // Prior Cycle Toggle Indicator
+      const togglePriorCycleBtn = document.getElementById('togglePriorCycle');
+      const cycleIndicator = document.getElementById('cycleIndicator');
+      let priorCycleActive = true;
+
+      if (togglePriorCycleBtn && cycleIndicator) {
+        togglePriorCycleBtn.addEventListener('click', () => {
+          priorCycleActive = !priorCycleActive;
+          if (priorCycleActive) {
+            cycleIndicator.textContent = 'ON';
+            cycleIndicator.className = 'px-1.5 py-0.5 rounded text-[10px] font-telemetry-code bg-surface-container-high text-primary font-bold';
+          } else {
+            cycleIndicator.textContent = 'OFF';
+            cycleIndicator.className = 'px-1.5 py-0.5 rounded text-[10px] font-telemetry-code bg-surface-container text-outline font-bold';
+          }
+        });
+      }
+
+      // Time Range Select Trigger Toast
+      const timeRangeSelect = document.getElementById('timeRangeSelect');
+      if (timeRangeSelect) {
+        timeRangeSelect.addEventListener('change', (e) => {
+          const val = e.target.value;
+          // Feedback pulse on KPI figures
+          document.querySelectorAll('.font-display-lg').forEach(el => {
+            el.classList.add('opacity-50');
+            setTimeout(() => el.classList.remove('opacity-50'), 250);
+          });
+        });
+      }
+
+      // Report Generator Modal toggle
+      const openModalBtn = document.getElementById('openReportModal');
+      const closeModalBtn = document.getElementById('closeReportModal');
+      const cancelModalBtn = document.getElementById('cancelModalBtn');
+      const generateModalBtn = document.getElementById('generateModalBtn');
+      const reportModal = document.getElementById('reportModal');
+
+      const toggleModal = (show) => {
+        if (!reportModal) return;
+        if (show) {
+          reportModal.classList.remove('hidden');
+          reportModal.classList.add('flex');
+        } else {
+          reportModal.classList.add('hidden');
+          reportModal.classList.remove('flex');
+        }
+      };
+
+      if (openModalBtn) openModalBtn.addEventListener('click', () => toggleModal(true));
+      if (closeModalBtn) closeModalBtn.addEventListener('click', () => toggleModal(false));
+      if (cancelModalBtn) cancelModalBtn.addEventListener('click', () => toggleModal(false));
+      if (generateModalBtn) {
+        generateModalBtn.addEventListener('click', () => {
+          generateModalBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> Compiling...';
+          setTimeout(() => {
+            generateModalBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> Generated';
+            setTimeout(() => {
+              toggleModal(false);
+              generateModalBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">download</span> <span>Generate Brief</span>';
+            }, 700);
+          }, 1000);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

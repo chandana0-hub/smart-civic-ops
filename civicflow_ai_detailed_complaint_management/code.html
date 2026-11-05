@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#f8f9ff","surface-bright":"#f8f9ff","surface-tint":"#0053db","on-primary":"#ffffff","on-surface":"#0b1c30","secondary-fixed-dim":"#4cd7f6","on-error-container":"#93000a","on-primary-fixed":"#00174b","on-secondary-fixed-variant":"#004e5c","tertiary-container":"#656c89","surface-container-low":"#eff4ff","tertiary-fixed-dim":"#bec5e5","surface-container":"#e5eeff","secondary":"#00687a","secondary-fixed":"#acedff","tertiary-fixed":"#dbe1ff","on-tertiary-container":"#eeefff","primary-container":"#2563eb","surface-container-highest":"#d3e4fe","inverse-on-surface":"#eaf1ff","outline-variant":"#c3c6d7","tertiary":"#4c546f","surface-dim":"#cbdbf5","secondary-container":"#57dffe","on-secondary":"#ffffff","background":"#f8f9ff","on-secondary-fixed":"#001f26","surface-container-high":"#dce9ff","primary":"#004ac6","outline":"#737686","inverse-surface":"#213145","on-background":"#0b1c30","on-tertiary-fixed-variant":"#3e4660","on-tertiary-fixed":"#131a33","surface-variant":"#d3e4fe","primary-fixed-dim":"#b4c5ff","inverse-primary":"#b4c5ff","on-surface-variant":"#434655","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","on-secondary-container":"#006172","primary-fixed":"#dbe1ff","error":"#ba1a1a","on-primary-container":"#eeefff","on-primary-fixed-variant":"#003ea8","error-container":"#ffdad6","on-error":"#ffffff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-lg":"1.5rem","margin":"1rem","space-md":"1rem","space-xs":"0.25rem","margin-lg":"2rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1rem","space-xl":"2rem"},fontFamily:{"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"telemetry-code":["JetBrains Mono"],"display-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-md":["Inter"]},fontSize:{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"telemetry-code":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"display-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)] select-none"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-lg flex items-center gap-space-sm bg-inverse-surface"><img alt="CivicFlow AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Uey_YqHth-Yd2VybwCWfDEsKLBmEOjeXIkj9fKD--qY2unrds2X14-ijodW108kfgfnzVruFNYZmLWW5jrnXV2OIIItG6PSVq3DXin2WmEAp42RG9UwUYMMstnL0bnPAPQV78c3XMly_GMGmhuIIH12d7msFvbbHSu1-WGE9B5e-T9svtRy6p54dE7YD8s2suau_cKNgyfWBJEerI9PETgR6u1CtL9d-T5V1AUWjow"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary font-bold">CivicFlow AI</span></div><span class="font-telemetry-code text-[10px] uppercase tracking-wider text-secondary-fixed font-semibold">AI Operations Hub</span></div></div><div class="overflow-y-auto flex-1 px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Command Center</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="city-operations-map" href="#"><span class="material-symbols-outlined text-[18px]">map</span><span class="font-label-md text-label-md">City Operations Map</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="incident-dispatch" href="#"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="font-label-md text-label-md">Incident Dispatch</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Intelligence</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="agentic-workflows" href="#"><span class="material-symbols-outlined text-[18px]">account_tree</span><span class="font-label-md text-label-md">Agentic Workflows</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="ai-agent-activity" href="#"><span class="material-symbols-outlined text-[18px]">smart_toy</span><span class="font-label-md text-label-md">AI Agent Activity</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="automated-triage" href="#"><span class="material-symbols-outlined text-[18px]">flaky</span><span class="font-label-md text-label-md">Automated Triage</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Municipal Fleet &amp; Units</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="departments" href="#"><span class="material-symbols-outlined text-[18px]">domain</span><span class="font-label-md text-label-md">Departments</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="field-crews" href="#"><span class="material-symbols-outlined text-[18px]">groups</span><span class="font-label-md text-label-md">Field Crews</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="iot-sensor-matrix" href="#"><span class="material-symbols-outlined text-[18px]">sensors</span><span class="font-label-md text-label-md">IoT Sensor Matrix</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline-variant font-semibold">Analytics &amp; Reports</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="resolution-velocity" href="#"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-label-md text-label-md">Resolution Velocity</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="citizen-feedback" href="#"><span class="material-symbols-outlined text-[18px]">reviews</span><span class="font-label-md text-label-md">Citizen Feedback</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-outline-variant hover:bg-surface-container-high/10 hover:text-on-primary transition-all" data-path="audit-logs" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span class="font-label-md text-label-md">Audit Logs</span></a></nav></div></div></div><div class="p-space-md m-space-md rounded-xl bg-inverse-surface/80 shadow-[0_1px_8px_rgba(0,0,0,0.2)]"><div class="flex items-start gap-space-sm"><span class="relative flex h-2.5 w-2.5 mt-1"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><div class="flex flex-col gap-0.5"><span class="font-telemetry-code text-[11px] font-semibold text-on-primary">Civic LLM Core v4.2</span><p class="font-body-sm text-[11px] leading-tight text-outline-variant">All Autonomous Agents Active (99.98% SLA)</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 flex items-center justify-between px-gutter-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container rounded-xl text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px] text-primary">location_city</span><span class="font-label-md text-label-md font-semibold">Metropolis Capital District (Zone A-F)</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></div><div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-high rounded-full"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-telemetry-code text-[11px] font-semibold text-primary">Routing: ACTIVE</span></div></div><div class="flex-1 max-w-xl mx-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-xl outline-none transition-all shadow-[0_1px_3px_rgba(11,19,43,0.04)] focus:shadow-[0_0_0_2px_rgba(37,99,235,0.2)]" placeholder="Search tickets, geofences, dispatch units, or citizen IDs (Ctrl + K)..." type="text"/><kbd class="absolute right-3 font-telemetry-code text-[10px] text-outline bg-surface-container px-1.5 py-0.5 rounded">Ctrl+K</kbd></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-sm py-1.5 bg-error-container text-on-error-container font-label-md text-label-md font-semibold rounded-xl hover:bg-error hover:text-on-error transition-all shadow-[0_1px_3px_rgba(11,19,43,0.04)]" type="button"><span class="material-symbols-outlined text-[16px]">campaign</span><span>Broadcast</span></button><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary">wb_sunny</span><span class="font-telemetry-code text-[12px]">72°F</span><span class="text-outline-variant">|</span><span class="font-telemetry-code text-[12px]">UTC-5 10:42 AM</span></div><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-telemetry-code text-[9px] font-bold">14</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEukjLM-BIt-tavLbDoUmQpI25WLx0OPv23EfWnq5jF4W5-oswagEILE2t0HVm5dgMPETS7NkjXUhs178sJgHzQPhevSANnSlQXVA7mBKtyaO8TiOCOe4k0Fast4cQlTTT9JEWEvnecNDU_wuQ95_lsh9ynOd0KZogCitv-Y12pEr4pDrNnL2jM3ppRsbTz8_4Njs32wGX_0ps0y0Ci7Uc_pQDLG4w386TNL25Pys"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">Director Marcus Vance</span><span class="font-label-sm text-label-sm text-outline">Chief Municipal Operations Officer</span></div><span class="material-symbols-outlined text-[18px] text-outline cursor-pointer">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-Header / Control Strip -->
+<div class="bg-surface-container-low px-gutter-lg py-space-sm shadow-sm flex flex-col gap-space-sm">
+<!-- Breadcrumb & System State -->
+<div class="flex items-center justify-between">
+<nav class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="hover:text-primary cursor-pointer transition-colors">Civic Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Complaints Management</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold font-telemetry-code">CIV-9042</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-telemetry-code text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          AURA-VISION AGENT ACTIVE
+        </span>
+<span class="font-telemetry-code text-body-sm text-outline">LATENCY: 14ms</span>
+</div>
+</div>
+<!-- Main Title & Operational Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-headline-lg text-primary font-bold">#CIV-9042</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+            Critical Severity • P1
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span>
+            Live Agentic Triage
+          </span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight w-full xl:w-auto mt-1 xl:mt-0">
+          Severe High-Pressure Water Main Rupture Flooding Roadway &amp; Sidewalk
+        </h1>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold rounded-lg transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span>
+          Dossier
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold rounded-lg transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+          Reassign Unit
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-highest hover:bg-surface-dim text-primary font-label-md text-label-md font-semibold rounded-lg transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+          Dispatch Aux
+        </button>
+<div class="relative inline-block text-left">
+<button class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold rounded-lg transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+            Update Status
+            <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Metadata Horizontal Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs pb-1">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">water_damage</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline truncate uppercase">Infrastructure Category</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Water Works &amp; Hydraulics</span>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline truncate uppercase">Timestamp (UTC-5)</span>
+<span class="font-telemetry-code text-[12px] text-on-surface font-medium truncate">Oct 24, 2024 • 10:28:14 AM</span>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">engineering</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline truncate uppercase">Containment Phase</span>
+<span class="font-label-md text-label-md text-secondary font-semibold truncate">In-Field Isolation Active</span>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">timer</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline truncate uppercase">SLA Target Delta</span>
+<span class="font-telemetry-code text-[12px] text-primary font-semibold truncate">ETA: 1h 45m (Target: 2h 30m)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Grid (Master-Detail 65% / 35%) -->
+<div class="px-gutter-lg py-space-lg grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- LEFT COLUMN: Detailed Incident Dossier (8 cols / ~65%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- AI Multimodal Assessment Engine Box -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-md shadow-md overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary-container via-primary-container to-secondary"></div>
+<div class="flex items-start justify-between gap-space-md mb-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Aura-Dispatch &amp; Vision-AI Multimodal Assessment</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-telemetry-code text-[11px]">Civic LLM Core v4.2</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Autonomous incident parsing corroborated with IoT acoustic pressure grid.</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline uppercase block">AI Threat Index</span>
+<span class="font-telemetry-code text-headline-md text-error font-bold">98.4<span class="text-label-sm text-outline font-normal">/100</span></span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Root Cause Hypothesis</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+              Acoustic sensor correlation with telemetry node <span class="font-telemetry-code text-primary font-semibold">#W-108</span> confirms 420 GPM hydraulic drop. Cast-iron fracture likely.
+            </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Autonomous Perimeter</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+              180m flood gradient perimeter. 3 commercial grade cellars at risk. Inbound Lane 1 &amp; 2 bus transit obstructed.
+            </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Auto-Triggered Workflows</span>
+<div class="flex flex-col gap-1">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+                Transit signal retimed to Bypass-4
+              </span>
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+                Gate valve #V-402 designated
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Reporter Verification Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">person_pin</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Verified Citizen Reporter Dossier</h3>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-telemetry-code text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            ID: #CIT-8022
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Reporter Info -->
+<div class="md:col-span-4 flex flex-col gap-space-xs bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-sm font-bold">
+                ER
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Elena Rostova</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Zone B Resident</span>
+</div>
+</div>
+<div class="mt-2 space-y-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-outline">Civic Trust:</span>
+<span class="font-telemetry-code font-semibold text-primary">98.2%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-outline">Prior Reports:</span>
+<span class="font-telemetry-code font-semibold text-on-surface">14 (100% Valid)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-outline">Device Auth:</span>
+<span class="font-body-sm text-on-surface truncate">iOS 17.5 • EXIF Valid</span>
+</div>
+</div>
+</div>
+<!-- Reporter Statement -->
+<div class="md:col-span-8 flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold block mb-1">Citizen Verbatim Transcript</span>
+<blockquote class="bg-surface-container-lowest italic font-body-md text-body-md text-on-surface p-space-sm rounded-lg bg-surface-container-low/50">
+                “Gushing clean water from underground pipe fracture at the junction of 428 4th Ave. Flow has broken a 2-meter patch of asphalt. Pedestrians forced onto active road lane. Water entering basement grade of commercial retail building.”
+              </blockquote>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs text-body-sm text-outline font-telemetry-code">
+<span>Channel: Mobile Direct API</span>
+<span>•</span>
+<span>Encrypted SHA-256 Verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Vector Geofence & Pipe Infrastructure Map -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">share_location</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Incident Geofence &amp; Subsurface Hydraulics Matrix</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container font-telemetry-code text-[11px] text-on-surface">GPS Acc: ±1.2m</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-telemetry-code text-[11px] text-primary">40.7128° N, 74.0060° W</span>
+</div>
+</div>
+<!-- Simulated Visual Map Deck -->
+<div class="relative w-full h-80 rounded-xl overflow-hidden bg-surface-container-high shadow-inner">
+<div class="w-full h-full bg-cover bg-center" data-location="428 4th Ave, New York, NY" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCW35kRuWVBzPLH8TPQEoUKb6PjLi0nwXvNk1oGFvE-d1Qe70QR_mr8UDiEhlweNQnC3mVT7KSF3YYMossb5ctS4jhSvqdYySm8sp1vfzV0RY6xBe7xbGNZHGptoRJ6ileSk7J887oRRjrKlwPRO4_tySHzvn3UrlbfwSlLDA0stkYxQO9BcOMSJqHwcvBXTHV84lUFNnfSPKQ0XqEmdlW0KH516uyeQbM-quoEM2I')"></div>
+<!-- Tactical Map Overlay Layer -->
+<div class="absolute inset-0 bg-inverse-surface/30 backdrop-blur-[0.5px] p-space-md flex flex-col justify-between pointer-events-none">
+<!-- Top Map HUD -->
+<div class="flex justify-between items-start">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-md flex items-center gap-2 pointer-events-auto">
+<span class="material-symbols-outlined text-[16px] text-error">warning</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Zone B • Core Grid #108</span>
+</div>
+<div class="flex flex-col gap-1 items-end pointer-events-auto">
+<span class="px-2 py-1 rounded bg-inverse-surface text-inverse-on-surface font-telemetry-code text-[11px] shadow">
+                  PIPE ID: MAIN-CW-882 (Cast Iron 12")
+                </span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-telemetry-code text-[10px]">
+                  Flow Rate: 420 GPM
+                </span>
+</div>
+</div>
+<!-- Central Tactical Markers (Schematic overlay) -->
+<div class="relative w-full h-32 flex items-center justify-center">
+<!-- Hydraulic Rupture Ground Zero -->
+<div class="relative flex items-center justify-center">
+<span class="absolute w-24 h-24 rounded-full bg-error/20 animate-ping"></span>
+<span class="absolute w-12 h-12 rounded-full bg-error/30 animate-pulse"></span>
+<div class="w-7 h-7 rounded-full bg-error flex items-center justify-center text-on-error shadow-lg z-10">
+<span class="material-symbols-outlined text-[16px]">water</span>
+</div>
+<div class="absolute top-8 bg-surface-container-lowest px-2 py-0.5 rounded shadow text-[10px] font-telemetry-code text-error font-bold whitespace-nowrap">
+                  Rupture Epicenter
+                </div>
+</div>
+<!-- Nearby Isolation Valve Marker -->
+<div class="absolute right-1/4 top-4 flex items-center gap-1 bg-surface-container-lowest/95 px-2 py-1 rounded shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">tune</span>
+<span class="font-telemetry-code text-[11px] font-semibold">Valve #V-402 (ISOLATED)</span>
+</div>
+<!-- En-Route Field Crew Marker -->
+<div class="absolute left-1/4 bottom-2 flex items-center gap-1.5 bg-primary-container px-2.5 py-1 rounded shadow text-on-primary">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+<span class="font-telemetry-code text-[11px] font-semibold">Crew #14 On Scene</span>
+</div>
+</div>
+<!-- Bottom Map Bar -->
+<div class="flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md px-3 py-2 rounded-lg pointer-events-auto">
+<div class="flex items-center gap-space-md text-body-sm font-label-sm">
+<span class="flex items-center gap-1 text-on-surface"><span class="w-2.5 h-2.5 rounded-full bg-error"></span> Rupture Site</span>
+<span class="flex items-center gap-1 text-on-surface"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Gate Valve #V-402 (60m)</span>
+<span class="flex items-center gap-1 text-on-surface"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Hydrant #H-902 (24m)</span>
+</div>
+<button class="text-primary font-label-md text-label-md font-semibold hover:underline flex items-center gap-0.5" type="button">
+                Full GIS Layer <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Uploaded Incident Telemetry & Photographs -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">perm_media</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Forensic Telemetry &amp; Field Computer Vision</h3>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-lg text-label-sm font-label-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add_photo_alternate</span>
+            Upload Telemetry
+          </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Evidence 1: Burst Pipe Image -->
+<div class="flex flex-col bg-surface-container-low rounded-lg overflow-hidden group">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High-pressure clean water bursting through cracked urban road pavement in Metropolis downtown street, cinematic documentary style, sharp focus on ruptured asphalt and splashing hydraulic spray with cool tone lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnHhojJNYqgo0gCLSYwqeK6e6hbBiNAIYHVj5uiGq67DcFZXxo7Wv_Ua7PK5HqP2Mkgo982_4GszKIQ-aLtRV-x6pV6GdVSVrgvvCQopLzZdm6rUUJth9Lvqcv5FdEcyE82op88aK5eRoe5bhq7AP1HvVR5QtzsLPndVbTCeOr3CxqODZlAqSC3VCPVHIJL8e9b0Xj_ibkKnEQ8AKTKvvIf9-gvbcmN6cBuz_npqc"/>
+<div class="absolute inset-x-2 top-2 flex justify-between items-start">
+<span class="px-2 py-0.5 rounded bg-error/90 text-on-error font-telemetry-code text-[10px] font-bold uppercase">
+                  AI Tagged • YOLO-Hydro
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-telemetry-code text-[10px]">
+                  Conf: 98.4%
+                </span>
+</div>
+<div class="absolute bottom-2 left-2 right-2 bg-inverse-surface/80 backdrop-blur-sm p-1.5 rounded text-inverse-on-surface text-[11px] font-telemetry-code">
+                Hydraulic Rupture Zone A
+              </div>
+</div>
+<div class="p-2.5 flex flex-col gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Pavement Fracturing</span>
+<span class="font-body-sm text-body-sm text-outline">Citizen Upload #1 • 10:28:18 AM</span>
+</div>
+</div>
+<!-- Evidence 2: Pedestrian Detour / Flood Image -->
+<div class="flex flex-col bg-surface-container-low rounded-lg overflow-hidden group">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Flooded city sidewalk and roadway intersection showing water overflow near retail storefronts with pedestrian detours and emergency water hazard signs, daytime municipal view." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1la1LLkYfJbgPdFxG8PhovMjgMw7E88ONl7Q0qZas2KZppLOwu2XVBkTJyu1mfZ2IvPmCZskmuIfOwExrjMZSMR23Gul8yWoko7WpsUl7109GsQQz58J7NOh10tGuzPoCw-232C8BpJUOvu-y5xs4b95riQk47X-KVMQtkYc0BnrV9YmrGbua0KfpAV4NrjmChr09kZk5iOTlrLv70-M92DczRyUvOwz515WC8Fo"/>
+<div class="absolute inset-x-2 top-2 flex justify-between items-start">
+<span class="px-2 py-0.5 rounded bg-secondary/90 text-on-secondary font-telemetry-code text-[10px] font-bold uppercase">
+                  Perimeter Risk
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-telemetry-code text-[10px]">
+                  Radius: 18m
+                </span>
+</div>
+<div class="absolute bottom-2 left-2 right-2 bg-inverse-surface/80 backdrop-blur-sm p-1.5 rounded text-inverse-on-surface text-[11px] font-telemetry-code">
+                Commercial Inundation Risk
+              </div>
+</div>
+<div class="p-2.5 flex flex-col gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sidewalk Inundation</span>
+<span class="font-body-sm text-body-sm text-outline">Citizen Upload #2 • 10:28:22 AM</span>
+</div>
+</div>
+<!-- Evidence 3: Acoustic Sensor Spectrogram -->
+<div class="flex flex-col bg-surface-container-low rounded-lg overflow-hidden p-3 justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Acoustic Hydrophone #W-108</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-telemetry-code text-[10px]">CORRELATED</span>
+</div>
+<!-- Simulated Spectrogram Waveform -->
+<div class="h-28 bg-inverse-surface rounded-lg p-2 flex flex-col justify-end gap-1">
+<div class="flex items-end justify-between h-20 gap-1 px-1">
+<div class="w-full bg-secondary-fixed h-4 rounded-t-sm"></div>
+<div class="w-full bg-secondary h-8 rounded-t-sm"></div>
+<div class="w-full bg-secondary h-14 rounded-t-sm"></div>
+<div class="w-full bg-primary-container h-20 rounded-t-sm"></div>
+<div class="w-full bg-error h-24 rounded-t-sm"></div>
+<div class="w-full bg-error h-20 rounded-t-sm"></div>
+<div class="w-full bg-secondary h-16 rounded-t-sm"></div>
+<div class="w-full bg-secondary h-10 rounded-t-sm"></div>
+<div class="w-full bg-secondary-fixed h-6 rounded-t-sm"></div>
+</div>
+<div class="flex justify-between text-[9px] font-telemetry-code text-inverse-on-surface/70 border-t border-surface-container/20 pt-1">
+<span>10 Hz</span>
+<span>Cavitation Spike @ 2.4 kHz</span>
+<span>12 kHz</span>
+</div>
+</div>
+</div>
+<div class="mt-2 text-body-sm text-outline font-telemetry-code">
+              Subsurface Pressure: <span class="text-error font-semibold">-48 PSI</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Field Communication Log & Remarks -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">forum</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Field Dispatch Communications &amp; Audit Remarks</h3>
+</div>
+<span class="font-telemetry-code text-body-sm text-outline">Channel: SEC-CH-04</span>
+</div>
+<!-- Remarks Timeline Stream -->
+<div class="space-y-space-md pl-2 border-l-2 border-surface-container">
+<!-- Remark 1 -->
+<div class="relative pl-space-md">
+<div class="absolute -left-[21px] top-1 w-3.5 h-3.5 rounded-full bg-primary"></div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dispatcher Maya Lin</span>
+<span class="font-telemetry-code text-[11px] text-outline">Metro Command Central • 10:35 AM</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">DISPATCH NOTE</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface bg-surface-container-low p-space-sm rounded-lg">
+              Rerouted Crew #14 (Heavy Hydraulics) from Zone B substation. Metro Police Unit #204 dispatched for active traffic coning and roadway diversion.
+            </p>
+</div>
+<!-- Remark 2 -->
+<div class="relative pl-space-md">
+<div class="absolute -left-[21px] top-1 w-3.5 h-3.5 rounded-full bg-secondary"></div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Lt. Carlos Mendez</span>
+<span class="font-telemetry-code text-[11px] text-outline">Field Chief (Crew #14) • 10:48 AM</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px]">ON SCENE TELEMETRY</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface bg-surface-container-low p-space-sm rounded-lg">
+              On scene at 428 4th Ave. Primary isolation valve #V-402 successfully turned off. Main line water pressure dropping rapidly. Hydro-vac excavator truck arriving in 12 mins to uncover pipe joint.
+            </p>
+</div>
+</div>
+<!-- Remark Input Box -->
+<div class="mt-space-lg bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-2 mb-2 text-outline font-label-sm text-label-sm">
+<span>Add Operational Directive or Observation:</span>
+</div>
+<textarea class="w-full bg-surface-container-lowest text-on-surface p-space-sm rounded-lg border-0 outline-none text-body-md font-body-md focus:shadow-md transition-shadow" placeholder="Post instructions or field status (e.g., @Crew-14, @WaterWorks, #excavation)..." rows="3"></textarea>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-surface-container">
+<div class="flex items-center gap-space-xs text-outline">
+<button class="p-1 hover:text-on-surface hover:bg-surface-container rounded transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">alternate_email</span></button>
+<button class="p-1 hover:text-on-surface hover:bg-surface-container rounded transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">attach_file</span></button>
+<button class="p-1 hover:text-on-surface hover:bg-surface-container rounded transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">mic</span></button>
+</div>
+<button class="inline-flex items-center gap-1 px-4 py-1.5 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+              Post Directive
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Operational Workflow & Assignment Panel (4 cols / ~35%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Command Assignment Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-container">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Municipal Deployment</h3>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-telemetry-code text-[11px] font-bold">
+            TIER-1 RESPONSE
+          </span>
+</div>
+<!-- Assigned Dept -->
+<div class="space-y-space-md">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Responsible Department</span>
+<span class="font-label-md text-label-md font-bold text-on-surface leading-tight">Metropolis Water Works &amp; Environmental</span>
+<span class="font-telemetry-code text-[11px] text-secondary font-medium">District 4 Central Division</span>
+</div>
+</div>
+<!-- Lead Officer Details -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Lead Field Commander</span>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait of municipal emergency officer Lt. Carlos Mendez wearing dark blue uniform and high-visibility safety harness with radio communicator, professional candid shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqGQXpTkyGmq9SwQZ6Mx4iBXTbmQlyuCRGoi7RWzBuhu_8ku5sSPW_dl26rLkMO3QuVbNn7fXxB36_fv73MbOykIcIq4dxgy8UtINSGIIgS6krPZEJovlyJnXujCvH9_eW1UCOaqM4Dmq6G_UQcG8XKff4uSaEPMgNkm0v0vGh1ifz486rXbOZ3tWFxkFv1NJGROVRRcnfjaCU8iL5AfBcBSjIpU6KExCYakB7j9U"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Lt. Carlos Mendez</span>
+<span class="font-telemetry-code text-[11px] text-outline">Badge #MWW-4402 • Alpha 14</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-primary shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+</div>
+</div>
+<!-- Field Crew Breakdown -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Active Unit Specifications</span>
+<div class="flex items-center justify-between text-body-sm p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hydraulics Crew #14</span>
+</div>
+<span class="font-telemetry-code text-[11px] text-outline">4 Techs • Hydro-Vac #03</span>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold rounded-lg transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">published_with_changes</span>
+            Reassign or Transfer Ticket
+          </button>
+</div>
+</div>
+<!-- SLA & Lifecycle Metrics Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-sm">Containment SLA Telemetry</h3>
+<!-- SLA Progress Metric -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Elapsed Incident Clock</span>
+<span class="font-telemetry-code text-headline-lg font-bold text-on-surface">00:24:46</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">On Schedule: -45m vs. Critical SLA</span>
+</div>
+<!-- Circular Metric (Inline SVG) -->
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="35, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-telemetry-code font-bold text-label-md text-on-surface">35%</span>
+</div>
+</div>
+<div class="space-y-1.5 font-body-sm">
+<div class="flex justify-between">
+<span class="text-outline">Max Regulatory SLA:</span>
+<span class="font-telemetry-code text-on-surface font-semibold">2h 30m</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">AI Projected Restoration:</span>
+<span class="font-telemetry-code text-primary font-semibold">1h 45m</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Citizen Impact Multiplier:</span>
+<span class="font-telemetry-code text-on-surface font-semibold">High (Urban Transit Arterial)</span>
+</div>
+</div>
+</div>
+<!-- Live Lifecycle Stepper -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-container">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Lifecycle Stage Trace</h3>
+<span class="font-telemetry-code text-[11px] text-secondary font-semibold">STAGE 5 OF 8</span>
+</div>
+<div class="relative pl-6 space-y-space-md before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<!-- Step 1 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-secondary flex items-center justify-center text-on-secondary text-[8px]">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Citizen Submission Ingested</span>
+<span class="font-telemetry-code text-[10px] text-outline">10:28:14 AM • App Auth Validated</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-secondary flex items-center justify-center text-on-secondary text-[8px]">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Multimodal AI Vision &amp; Acoustic Triage</span>
+<span class="font-telemetry-code text-[10px] text-outline">10:29:02 AM • 98.4% Confidence</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-secondary flex items-center justify-center text-on-secondary text-[8px]">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Auto Work Order #WO-419 Generated</span>
+<span class="font-telemetry-code text-[10px] text-outline">10:31:40 AM • Water Works Assigned</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-secondary flex items-center justify-center text-on-secondary text-[8px]">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Crew #14 En-Route</span>
+<span class="font-telemetry-code text-[10px] text-outline">10:34:11 AM • Siren Code 3</span>
+</div>
+</div>
+<!-- Step 5 (Active) -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-primary-container ring-4 ring-primary-container/20 flex items-center justify-center text-on-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary animate-ping"></span>
+</div>
+<div class="flex flex-col bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-md text-label-md font-bold text-primary">On-Site Containment &amp; Valve Cutoff</span>
+<span class="font-telemetry-code text-[11px] text-on-surface font-medium">10:48 AM • ACTIVE EXECUTION</span>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="relative opacity-60">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-surface-container"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline">Pipe Hydro-Vac Excavation</span>
+<span class="font-telemetry-code text-[10px] text-outline">Est: 11:30 AM • Pending Valve Drain</span>
+</div>
+</div>
+<!-- Step 7 -->
+<div class="relative opacity-60">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-surface-container"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline">Asphalt Patch &amp; Structural Clearance</span>
+<span class="font-telemetry-code text-[10px] text-outline">Est: 01:15 PM</span>
+</div>
+</div>
+<!-- Step 8 -->
+<div class="relative opacity-60">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-surface-container"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline">Closure &amp; Citizen Resolution Notice</span>
+<span class="font-telemetry-code text-[10px] text-outline">Final Sign-off</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Triggers & Communication Action Drawer -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<h4 class="font-label-sm text-label-sm text-outline uppercase font-semibold">Rapid Escalation Controls</h4>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="px-3 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold rounded-lg transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">done_all</span>
+            Mark Repaired
+          </button>
+<button class="px-3 py-2 bg-error-container hover:bg-error hover:text-on-error text-on-error-container font-label-md text-label-md font-semibold rounded-lg transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">crisis_alert</span>
+            City Hazard Alert
+          </button>
+</div>
+<button class="w-full py-2 bg-secondary-fixed hover:bg-secondary-fixed-dim text-on-secondary-fixed font-label-md text-label-md font-semibold rounded-lg transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+          Notify Elena Rostova via Direct SMS
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
